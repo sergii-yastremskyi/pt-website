@@ -1,0 +1,145 @@
+.burgerBar {
+  z-index: 2;
+  background-color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 60px;
+  width: 100vw;
+}
+
+/* @media screen and (min-width: 1000px) {
+  .burgerBar {
+    display: none;
+  }
+  .container {
+    width: 1000px;
+  }
+} */
+.services {
+}
+.header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.logo {
+  max-width: 200px;
+}
+.logoConteiner {
+  padding: 10px;
+}
+.servisecList {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0;
+}
+.servicesItemStyle {
+  margin: 0;
+}
+.socialIconsList {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  flex-direction: row;
+}
+.socialIconsListItem:not(:last-child) {
+  margin-right: 5px;
+}
+
+/* burger menu btn */
+.menuBtn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+  transition: all 0.5s ease-in-out;
+}
+.menuBtnBurger {
+  width: 30px;
+  height: 3px;
+  background: #fff;
+  border-radius: 3px;
+  box-shadow: 0 2px 5px rgba(255, 101, 47, 0.2);
+  transition: all 0.5s ease-in-out;
+}
+.menuBtnBurger::before,
+.menuBtnBurger::after {
+  content: '';
+  position: absolute;
+  width: 30px;
+  height: 3px;
+  background: #fff;
+  border-radius: 3px;
+  box-shadow: 0 2px 5px rgba(255, 101, 47, 0.2);
+  transition: all 0.5s ease-in-out;
+}
+.menuBtnBurger::before {
+  transform: translateY(-10px);
+}
+.menuBtnBurger::after {
+  transform: translateY(10px);
+}
+/* animation */
+.menuBtn.open .menuBtnBurger {
+  transform: translateX(0px);
+  background: transparent;
+  box-shadow: none;
+}
+.menuBtn.open .menuBtnBurger::before {
+  transform: rotate(45deg) translate(0px, 0px);
+}
+.menuBtn.open .menuBtnBurger::after {
+  transform: rotate(-45deg) translate(0px, 0px);
+}
+/* Drop Menu */
+.dropMenu {
+  /* z-index: 1; */
+  display: flex;
+  flex-direction: column;
+  transition: all 0.5s ease-in-out;
+  overflow: hidden;
+  height: auto;
+  max-height: 0;
+}
+@media screen and (min-width: 700px) {
+  .dropMenu {
+    flex-direction: row;
+    justify-content: space-between;
+    width: auto;
+    width: 100%;
+  }
+  .item {
+  }
+
+  .item:nth-child(1) {
+    order: 2;
+    background-color: peru;
+  }
+
+  .item:nth-child(2) {
+    order: 1;
+    background-color: lime;
+  }
+
+  .item:nth-child(3) {
+    order: 3;
+    background-color: red;
+  }
+}
+.breakLine {
+  width: 100%;
+  height: 1px;
+  background-color: black;
+}
+.dropAnimation {
+  max-height: 700px;
+}
+.menuIsOpen {
+  max-height: 700px;
+}

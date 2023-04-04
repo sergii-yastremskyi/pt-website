@@ -1,0 +1,346 @@
+/* @media screen and (min-width: 480px) {
+  .container {
+    width: 380px;
+    margin: 0 auto;
+  }
+} */
+
+/* @media screen and (min-width: 768px) {
+  .container {
+    width: 768px;
+  }
+} */
+
+@media screen and (min-width: 1200px) {
+  .container {
+    width: 1200px;
+  }
+}
+.hero {
+  height: 80vh;
+  max-height: 800px;
+  background-image: url(./Assets/img/hero_img.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  padding: 0px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+.heroHeader {
+  display: flex;
+
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin-bottom: 40px;
+}
+.heroContent {
+  text-align: center;
+}
+.services {
+  height: 100vh;
+  max-height: 900px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.serviceList {
+  padding: 0;
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.serviceListItem {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.orderButton {
+  background-color: orange;
+  color: white;
+  border: none;
+  background-repeat: 5px;
+  padding: 10px;
+}
+.whereToUse {
+  height: auto;
+  max-height: 900px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+.whereToUseHeader {
+}
+.whereToUseList {
+  padding: 20px;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  align-self: flex-start;
+}
+.whereToUseListItem {
+  list-style: disc;
+  margin-bottom: 20px;
+}
+.whereToUseImg {
+  max-width: 100%;
+  margin: 0 auto;
+}
+.howItsWorks {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 20px;
+}
+.howItsWorksHeader {
+}
+.howItWorksList {
+  padding: 0px;
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+}
+.howItWorksListItem {
+  padding-bottom: 20px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.howItWorksBulletPoint {
+  width: 40px;
+  height: 40px;
+  border-width: 2px;
+  background: #ffa600;
+  border-radius: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+.howItWorksListItemText {
+  margin-left: 20px;
+}
+.whyWe {
+  height: 90vh;
+  max-height: 900px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-image: linear-gradient(
+      to bottom,
+      rgba(0, 0, 0, 0.52),
+      rgba(0, 0, 0, 0.73)
+    ),
+    url(./Assets/img/whyWe.jpg);
+}
+.whyWeHeader {
+  color: white;
+}
+.whyWeList {
+  padding: 0px;
+  display: flex;
+  flex-direction: column;
+  color: white;
+}
+.whyWeListItem {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.whyWeBrLn {
+  height: 1px;
+  width: 100%;
+  opacity: 0.5;
+  background-color: rgb(255, 255, 255);
+}
+.whyWeItemText {
+  font-weight: 100;
+  color: white;
+}
+.whyWeItemNumber {
+  font-weight: 800;
+  font-size: 28px;
+}
+
+.whatYouGet {
+  height: auto;
+  /* max-height: 900px; */
+  padding: 105px 20px 40px 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.whatYouGetHeader {
+}
+.whatYouGetList {
+  list-style: none;
+  padding: 0px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.whatYouGetListItem {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
+.whatYouGetImg {
+}
+.whatYouGetItemBold {
+  font-weight: 800;
+  font-size: 22px;
+  margin-bottom: 10px;
+}
+.whatYouGetItemText {
+  text-align: center;
+  font-size: 18px;
+}
+.smallPicturesBlock {
+  padding: 45px 10px 90px 10px;
+}
+.smallPicturesBlockList {
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  padding: 0;
+}
+.smallPicturesBlockListItem {
+  padding: 10px;
+}
+
+.contactForm {
+  padding: 45px 10px 90px 10px;
+  font-size: 20px;
+}
+.contactFormText {
+  text-align: center;
+}
+.contactFormForm {
+  display: flex;
+  flex-direction: column;
+}
+.contactFormInput {
+  margin-bottom: 10px;
+  height: 60px;
+  line-height: 1.3;
+  border-radius: 0;
+
+  outline: none;
+  padding-left: 20px;
+  border: 1px solid #c7c7c7;
+}
+.contactFormButton {
+  background-color: #ffa600;
+  color: white;
+  border-radius: 5px;
+  line-height: 3;
+  border: none;
+}
+.clients {
+}
+.clientsHeader {
+  font-size: 30px;
+  font-weight: 800;
+  text-align: center;
+  margin-bottom: 50px;
+}
+.clientsList {
+  padding: 0;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  list-style: none;
+}
+.clientsListItem {
+  width: 175px;
+  height: 175px;
+  padding: 10px;
+  margin: 0px;
+}
+.footer {
+  /* height: 100px; */
+  background-color: rgb(10, 10, 10);
+  color: white;
+  padding: 70px 20px 90px 20px;
+}
+.logoWhite {
+  width: 150px;
+}
+.footerMenu {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  margin-bottom: 10px;
+}
+.footerMenuHeader {
+  margin-top: 20px;
+  font-size: 12px;
+  color: grey;
+}
+.footerMenuList {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  margin: 0;
+  padding: 0;
+}
+.footerMenuListItem {
+  line-height: 0px;
+  font-size: 12px;
+  padding: 0;
+  margin: 0;
+  font-weight: 200;
+}
+.footerServices {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  margin-bottom: 30px;
+}
+.footerServicesHeader {
+  margin-top: 20px;
+  font-size: 12px;
+  color: grey;
+}
+.footerServicesList {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  margin: 0;
+  padding: 0;
+}
+.footerServicesListItem {
+  line-height: 0px;
+  font-size: 12px;
+  padding: 0;
+  margin: 0;
+  font-weight: 200;
+}
+.footerContacts {
+}
+.footerContactsItem {
+  color: grey;
+  font-style: 12px;
+}
