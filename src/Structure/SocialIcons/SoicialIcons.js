@@ -1,7 +1,7 @@
 import React from 'react';
 import SocialIconsListItem from './SocialIconsListItem/SocialIconsListItem';
-
-export default function SoicialIcons({ style }) {
+import css from './socialIconsList.module.css'
+export default function SoicialIcons() {
   const socialIconsContent = [
     {
       text: 'Instagram',
@@ -15,8 +15,8 @@ export default function SoicialIcons({ style }) {
     },
   ];
   return (
-    <div className={style}>
-      <ul className={style.socialIconsList}>
+    <div className={css.socailIcons }>
+      <ul className={css.socialIconsList}>
         <SocialIconsListItem list={socialIconsContent} />
       </ul>
     </div>

@@ -64,19 +64,21 @@ export default function Header() {
           className={`${css.dropMenu} 
         ${animate && css.dropAnimation} ${desktop && css.menuIsOpen}`}
         >
-          <div className={(css.logoConteiner, css.item)}>
+          <div className={`${css.logoConteiner} ${css.item}`}>
             <img className={css.logo} alt="logo" src={logo}></img>
           </div>
-
-          <SoicialIcons style={(css.icons, css.item)} />
-          <div className={css.item}>
+        <div  className={css.leftWrapper}>  <SoicialIcons style={(css.icons, css.item)} /></div>
+        
+            <div className={(css.item)}>
+              <div className={css.rightHeaderGroup}>
             <button type="button" className={css.button}>
               Контакти
             </button>
-            <ul className={css.languageSeletor}>
-              <li>UA</li>
-              <li>ENG</li>
-            </ul>
+            <ul className={css.languageSeletorList}>
+              <li className={css.languageSeletorListItem}>UA</li>
+              <li className={css.languageSeletorListItem}>ENG</li>
+                </ul>
+                </div>
           </div>
         </div>
       )}

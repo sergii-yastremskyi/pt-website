@@ -1,6 +1,6 @@
 import { nanoid } from 'nanoid';
 import React from 'react';
-import css from '../../Header/header.module.css';
+import css from './socialIconsListItem.module.css'
 export default function SocialIconsListItem({ list }) {
   return (
     <>

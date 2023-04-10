@@ -27,7 +27,13 @@
   max-width: 200px;
 }
 .logoConteiner {
+  /* background-color: blue; */
+  flex:1;
+   display: flex;
+   justify-content: center;
+   align-items: center;
   padding: 10px;
+  
 }
 .servisecList {
   list-style: none;
@@ -40,16 +46,29 @@
 .servicesItemStyle {
   margin: 0;
 }
-.socialIconsList {
+/* .socialIconsList {
   list-style: none;
   padding: 0;
   display: flex;
   flex-direction: row;
+  
 }
 .socialIconsListItem:not(:last-child) {
   margin-right: 5px;
+} */
+.leftWrapper{
+  flex: 1;
+  /* background-color: red; */
 }
-
+.rightHeaderGroup{
+  flex:1;
+  display: flex;
+  font-display: row;
+  justify-content: flex-end;
+  align-items: center;
+  height: 100%;
+  margin-right: 20px;
+}
 /* burger menu btn */
 .menuBtn {
   display: flex;
@@ -107,35 +126,65 @@
   height: auto;
   max-height: 0;
 }
+.languageSeletorList{
+  display: flex;
+  flex-direction: row;
+  list-style: none;
+}
+.languageSeletorListItem:not(:last-child){
+  margin-right: 10px;
+}
+
 @media screen and (min-width: 700px) {
   .dropMenu {
     flex-direction: row;
     justify-content: space-between;
-    width: auto;
+    /* width: auto; */
     width: 100%;
+    height: 140px;
   }
   .item {
+    
   }
 
   .item:nth-child(1) {
     order: 2;
-    background-color: peru;
+    /* background-color: peru; */
+   /* flex:1; */
+    /* text-align: center; */
+    
   }
 
   .item:nth-child(2) {
     order: 1;
-    background-color: lime;
+    /* background-color: lime; */
+    
   }
 
   .item:nth-child(3) {
     order: 3;
-    background-color: red;
+    /* background-color: red; */
+    flex:1;
+   
+  }
+  .servisecList {
+    flex-direction: row;
+    height: 60px;
+    padding: 0px;
+    margin: 0px;
+  }
+  .servisecListItem:not(:last-child){
+    margin-right: 20px;
+  }
+  .languageSeletor{
+
   }
 }
 .breakLine {
   width: 100%;
   height: 1px;
-  background-color: black;
+  background-color: rgb(177, 177, 177);
+  opacity: 0.5;
 }
 .dropAnimation {
   max-height: 700px;

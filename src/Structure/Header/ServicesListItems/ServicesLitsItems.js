@@ -1,10 +1,11 @@
 import React from 'react';
 import { nanoid } from 'nanoid';
-export default function ServicesLitsItems({ listItems, style }) {
+import css from '../header.module.css'
+export default function ServicesLitsItems({ listItems }) {
   return (
     <>
       {listItems.map(item => (
-        <li key={nanoid()} className={style}>
+        <li key={nanoid()} className={css.servisecListItem}>
           {item.text}
         </li>
       ))}
