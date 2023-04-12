@@ -1,3 +1,7 @@
 .socialIconsListItem:not(:last-child) {
   margin-right: 5px;
+
+}
+.socialIconImgContainer{
+width: 30px;
 }

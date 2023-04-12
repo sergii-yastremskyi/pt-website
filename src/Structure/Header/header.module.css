@@ -1,3 +1,4 @@
+
 .burgerBar {
   z-index: 2;
   background-color: black;
@@ -6,6 +7,8 @@
   align-items: center;
   height: 60px;
   width: 100vw;
+  margin: 0px;
+  
 }
 
 /* @media screen and (min-width: 1000px) {
@@ -22,6 +25,8 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
+
 }
 .logo {
   max-width: 200px;
@@ -67,7 +72,7 @@
   justify-content: flex-end;
   align-items: center;
   height: 100%;
-  margin-right: 20px;
+ 
 }
 /* burger menu btn */
 .menuBtn {
@@ -121,10 +126,17 @@
   /* z-index: 1; */
   display: flex;
   flex-direction: column;
-  transition: all 0.5s ease-in-out;
+  transition:max-height 0.5s ease-in-out;
   overflow: hidden;
   height: auto;
   max-height: 0;
+  background-color: #fff;
+  width: 100%;
+  box-sizing: border-box;
+  justify-content: center;
+  align-items: center;
+  border: none;
+ 
 }
 .languageSeletorList{
   display: flex;
@@ -134,6 +146,21 @@
 .languageSeletorListItem:not(:last-child){
   margin-right: 10px;
 }
+.menuMobileContainer{
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.languageSeletor{
+  display: flex;
+  flex-direction: row;
+  list-style: none;
+  justify-content: center;
+  padding: 0px;
+
+  }
+ 
 
 @media screen and (min-width: 700px) {
   .dropMenu {
@@ -176,9 +203,7 @@
   .servisecListItem:not(:last-child){
     margin-right: 20px;
   }
-  .languageSeletor{
-
-  }
+  
 }
 .breakLine {
   width: 100%;
@@ -188,7 +213,9 @@
 }
 .dropAnimation {
   max-height: 700px;
+
 }
 .menuIsOpen {
   max-height: 700px;
+ 
 }

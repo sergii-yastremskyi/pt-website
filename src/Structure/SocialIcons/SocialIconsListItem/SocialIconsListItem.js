@@ -7,8 +7,9 @@ export default function SocialIconsListItem({ list }) {
       {list.map(item => (
         <li key={nanoid()} className={css.socialIconsListItem}>
           <a href={item.link}>
-            {' '}
-            <img src={item.img} alt={item.text} />{' '}
+            {console.log(item.img)}
+         <div className={css.socialIconImgContainer}> {item.img} </div>
+      
           </a>
         </li>
       ))}

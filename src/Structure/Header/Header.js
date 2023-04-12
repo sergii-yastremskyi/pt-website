@@ -1,9 +1,10 @@
-import React, { useEffect, useState } from 'react';
+import React, {  useState } from 'react';
 import css from './header.module.css';
 import logo from '../../Assets/img/party_tools_logo.png';
 import ServicesLitsItems from './ServicesListItems/ServicesLitsItems';
 import SoicialIcons from '../SocialIcons/';
 import useIsDesktop from '../../hooks/useIsDesktop';
+import sharedCss from '../Shared/shared.module.css'
 
 export default function Header() {
   const headerMenu = [
@@ -36,6 +37,7 @@ export default function Header() {
           className={`${css.dropMenu} 
         ${animate && css.dropAnimation} ${desktop && css.menuIsOpen}`}
         >
+          <div className={css.menuMobileContainer}>
           <div className={(css.logoConteiner, css.item)}>
             <img className={css.logo} alt="logo" src={logo}></img>
           </div>
@@ -54,35 +56,40 @@ export default function Header() {
           <button type="button" className={(css.button, css.item)}>
             Контакти
           </button>
-          <ul className={(css.languageSeletor, css.item)}>
-            <li>UA</li>
-            <li>ENG</li>
+          <ul className={`${css.languageSeletor} ${css.item}`}>
+            <li className={css.languageSeletorListItem}>UA</li>
+            <li className={css.languageSeletorListItem}>ENG</li>
           </ul>
+          </div>
         </div>
       ) : (
         <div
-          className={`${css.dropMenu} 
+          className={`${css.dropMenu} ${sharedCss.container}
         ${animate && css.dropAnimation} ${desktop && css.menuIsOpen}`}
         >
+         
           <div className={`${css.logoConteiner} ${css.item}`}>
             <img className={css.logo} alt="logo" src={logo}></img>
           </div>
         <div  className={css.leftWrapper}>  <SoicialIcons style={(css.icons, css.item)} /></div>
         
-            <div className={(css.item)}>
-              <div className={css.rightHeaderGroup}>
-            <button type="button" className={css.button}>
-              Контакти
-            </button>
-            <ul className={css.languageSeletorList}>
-              <li className={css.languageSeletorListItem}>UA</li>
-              <li className={css.languageSeletorListItem}>ENG</li>
-                </ul>
+         <div className={(css.item)}>
+                <div className={css.rightHeaderGroup}>
+                  <button type="button" className={css.button}>
+                    Контакти
+                  </button>
+                 <ul className={css.languageSeletorList}>
+                    <li className={css.languageSeletorListItem}>UA</li>
+                    <li className={css.languageSeletorListItem}>ENG</li>
+                 </ul>
                 </div>
           </div>
-        </div>
-      )}
-      <div className={css.breakLine}></div>
+          
+        
+        </div>)}
+
+      
+      {desktop&& <div className={css.breakLine}></div>}
 
       {desktop && (
         <div className={css.services}>

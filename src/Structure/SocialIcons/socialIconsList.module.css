@@ -4,12 +4,24 @@
   padding: 0;
   display: flex;
   flex-direction: row;
-  margin-left: 10px;
+  justify-content: center;
+  align-items: center;
+ padding: 0px;
+  /* margin-left: 10px; */
+  
 
 }
 
 .socailIcons {
   height: 100%;
   display: flex;
+  justify-content: center;
   align-items: center;
+}
+@media screen and (min-width: 700px) {
+  .socailIcons {
+   
+    justify-content: flex-start;
+    
+  }
 }
