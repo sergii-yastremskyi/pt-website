@@ -4,22 +4,15 @@ import logoWhite from './Assets/img/party_tools_logo_white.png';
 import css from './mainApp.module.css';
 import whereToUseImg from './Assets/img/where_to_use.jpg';
 import number1 from './Assets/img/number1.png';
+import Hero from './Structure/Hero/Hero.js';
 function App() {
   return (
     <div className="App">
       <Header />
-
+    
       <div className="content">
-        <div className={css.hero}>
-          <h2 className={css.heroHeader}>
-            Оренда фотобудок і гарного настрою!
-          </h2>
-          <p className={css.heroContent}>
-            фотобудка - відмінне доповнення до будь-якого заходу. Ваші гості
-            можуть миттєво отримати роздруковане фото та поілитися ним в
-            соціалних мережах.
-          </p>
-        </div>
+      <Hero/>
+      
         <div className={css.services}>
           <h2>Наші послуги</h2>
           <ul className={css.serviceList}>
