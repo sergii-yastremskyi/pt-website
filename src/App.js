@@ -4,31 +4,18 @@ import logoWhite from './Assets/img/party_tools_logo_white.png';
 import css from './mainApp.module.css';
 import whereToUseImg from './Assets/img/where_to_use.jpg';
 import number1 from './Assets/img/number1.png';
-import Hero from './Structure/Hero/Hero.js';
+import Hero from './Structure/Hero';
+import Services from './Structure/Services';
 function App() {
   return (
     <div className="App">
       <Header />
     
-      <div className="content">
+      <div className={css.content}>
       <Hero/>
-      
-        <div className={css.services}>
-          <h2>Наші послуги</h2>
-          <ul className={css.serviceList}>
-            <li className={css.serviceListItem}>
-              <img src="https://via.placeholder.com/200" alt="Фотобудка"></img>
-              <h3>Фотобудка</h3>
-              <p>
-                Лише декілька хвилин і яскраві спогади залишаться з вами у
-                вигляді роздрукованого фото
-              </p>
-            </li>
-          </ul>
-          <button type="button" className={css.orderButton}>
-            Замовити послгу
-          </button>
-        </div>
+     
+      <Services/>
+       
         <div className={css.whereToUse}>
           <h2 className={css.whereToUseHeader}>Де можна використати:</h2>
           <ul className={css.whereToUseList}>
@@ -339,6 +326,8 @@ function App() {
         </div>
       </div>
       <div className="callback-form"></div>
+      
+      {/*FOOOOOOTEEEEEEEEER  */}
       <div className={css.footer}>
         <img className={css.logoWhite} alt="logo" src={logoWhite}></img>
         <div className={css.footerMenu}>

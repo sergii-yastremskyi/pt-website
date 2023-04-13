@@ -17,33 +17,12 @@
   }
 }
 
-.services {
-  height: 100vh;
-  max-height: 900px;
-  padding: 20px;
+.content{ touch-action:pan-y;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-}
-.serviceList {
-  padding: 0;
-  list-style: none;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-.serviceListItem {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-}
-.orderButton {
-  background-color: orange;
-  color: white;
-  border: none;
-  background-repeat: 5px;
-  padding: 10px;
+  
 }
 .whereToUse {
   height: auto;

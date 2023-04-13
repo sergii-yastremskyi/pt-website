@@ -1,0 +1,57 @@
+.services {
+  
+    max-height: 900px;
+    width: 380px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0px;
+   
+  }
+  .servicesList {
+    width: 370px;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: flex-start;
+    overflow-x: auto;
+    
+  }
+  .servicesListItem {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 240px;
+  }
+  .servicesListItem:not(:last-child){
+    margin-right: 20px;
+  }
+  .orderButton {
+    background-color: orange;
+    color: white;
+    border: none;
+    background-repeat: 5px;
+    padding: 10px;
+  }
+  .servicesImg{
+    width: 220px;
+    height: 240px;
+  }
+
+  @media screen and (min-width: 700px) {
+    .servicesList {
+       width:740px;}
+  }
+  
+  @media screen and (min-width: 1200px) {
+    .services {max-width: 1200px;
+    }
+    
+    .servicesList { flex-wrap: wrap;
+    width: 1200px;}
+  }
