@@ -16,30 +16,7 @@
     width: 1200px;
   }
 }
-.hero {
-  height: 80vh;
-  max-height: 800px;
-  background-image: url(./Assets/img/hero_img.jpg);
-  background-repeat: no-repeat;
-  background-position: center;
-  padding: 0px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  color: white;
-}
-.heroHeader {
-  display: flex;
 
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  margin-bottom: 40px;
-}
-.heroContent {
-  text-align: center;
-}
 .services {
   height: 100vh;
   max-height: 900px;
