@@ -45,11 +45,13 @@
 
   @media screen and (min-width: 700px) {
     .servicesList {
-       width:740px;}
+       width:740px;
+      justify-content: center;}
   }
   
   @media screen and (min-width: 1200px) {
     .services {max-width: 1200px;
+      width: auto;
     }
     
     .servicesList { flex-wrap: wrap;

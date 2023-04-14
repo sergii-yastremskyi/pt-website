@@ -2,10 +2,10 @@ import './App.css';
 import Header from './Structure/Header';
 import logoWhite from './Assets/img/party_tools_logo_white.png';
 import css from './mainApp.module.css';
-import whereToUseImg from './Assets/img/where_to_use.jpg';
 import number1 from './Assets/img/number1.png';
 import Hero from './Structure/Hero';
 import Services from './Structure/Services';
+import WhereToUse from './Structure/WhereToUse';
 function App() {
   return (
     <div className="App">
@@ -13,30 +13,9 @@ function App() {
     
       <div className={css.content}>
       <Hero/>
-     
       <Services/>
-       
-        <div className={css.whereToUse}>
-          <h2 className={css.whereToUseHeader}>Де можна використати:</h2>
-          <ul className={css.whereToUseList}>
-            <li className={css.whereToUseListItem}>Виставки</li>
-            <li className={css.whereToUseListItem}>Корпоративні заходи</li>
-            <li className={css.whereToUseListItem}>Вечріки</li>
-            <li className={css.whereToUseListItem}>Спортивні події</li>
-            <li className={css.whereToUseListItem}>Весілля та річниці</li>
-            <li className={css.whereToUseListItem}>Дні народження</li>
-          </ul>
-          <p>
-            і це далеко не повний список, де фотобука від Party Tools буде
-            розважати ваших гостей
-          </p>
-
-          <img
-            className={css.whereToUseImg}
-            src={whereToUseImg}
-            alt="де використовувати фотобудку"
-          />
-        </div>
+      <WhereToUse/>
+      
         <div className={css.howItsWorks}>
           <h2 className={css.howItsWorksHeader}>Як працює фотобудка</h2>
           <ul className={css.howItWorksList}>
