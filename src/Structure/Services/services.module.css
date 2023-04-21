@@ -46,8 +46,17 @@
   @media screen and (min-width: 700px) {
     .servicesList {
        width:740px;
-      justify-content: center;}
+      /* justify-content: center; */
+    }
   }
+  /* @media screen and (min-width: 1024px) {
+    .servicesList {
+      width: 1000px;
+      justify-content: center;
+      flex-wrap: wrap;
+      overflow: none;
+    }
+  } */
   
   @media screen and (min-width: 1200px) {
     .services {max-width: 1200px;
@@ -55,5 +64,6 @@
     }
     
     .servicesList { flex-wrap: wrap;
-    width: 1200px;}
+    width: 1200px;
+  justify-content: center;}
   }
