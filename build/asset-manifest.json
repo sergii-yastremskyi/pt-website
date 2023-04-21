@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/pt-website/static/css/main.ce033ad6.css",
-    "main.js": "/pt-website/static/js/main.5b9cd28e.js",
+    "main.css": "/pt-website/static/css/main.4d7e3f27.css",
+    "main.js": "/pt-website/static/js/main.872ee3cd.js",
     "static/js/787.28cb0dcd.chunk.js": "/pt-website/static/js/787.28cb0dcd.chunk.js",
     "static/media/hero_img.jpg": "/pt-website/static/media/hero_img.9b057de9e16a3e4d72c6.jpg",
     "static/media/whyWe.jpg": "/pt-website/static/media/whyWe.282c0b502915f907669a.jpg",
@@ -12,12 +12,12 @@
     "static/media/icons8-instagram-circle-120.svg": "/pt-website/static/media/icons8-instagram-circle-120.98b14b62862f13574c6f2760f4d8919e.svg",
     "index.html": "/pt-website/index.html",
     "static/media/icons8-facebook-100.svg": "/pt-website/static/media/icons8-facebook-100.29ab4b1b353af7f740a92c129d0e41b5.svg",
-    "main.ce033ad6.css.map": "/pt-website/static/css/main.ce033ad6.css.map",
-    "main.5b9cd28e.js.map": "/pt-website/static/js/main.5b9cd28e.js.map",
+    "main.4d7e3f27.css.map": "/pt-website/static/css/main.4d7e3f27.css.map",
+    "main.872ee3cd.js.map": "/pt-website/static/js/main.872ee3cd.js.map",
     "787.28cb0dcd.chunk.js.map": "/pt-website/static/js/787.28cb0dcd.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.ce033ad6.css",
-    "static/js/main.5b9cd28e.js"
+    "static/css/main.4d7e3f27.css",
+    "static/js/main.872ee3cd.js"
   ]
 }
