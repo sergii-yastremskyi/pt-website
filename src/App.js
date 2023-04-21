@@ -6,6 +6,7 @@ import number1 from './Assets/img/number1.png';
 import Hero from './Structure/Hero';
 import Services from './Structure/Services';
 import WhereToUse from './Structure/WhereToUse';
+import HowItWorks from './Structure/HowItWorks'
 function App() {
   return (
     <div className="App">
@@ -15,36 +16,8 @@ function App() {
       <Hero/>
       <Services/>
       <WhereToUse/>
-      
-        <div className={css.howItsWorks}>
-          <h2 className={css.howItsWorksHeader}>Як працює фотобудка</h2>
-          <ul className={css.howItWorksList}>
-            <li className={css.howItWorksListItem}>
-              <div className={css.howItWorksBulletPoint}>1</div>
-              <p className={css.howItWorksListItemText}>
-                Доставка та монтаж фото
-              </p>
-            </li>
-            <li className={css.howItWorksListItem}>
-              <div className={css.howItWorksBulletPoint}>1</div>
-              <p className={css.howItWorksListItemText}>
-                Доставка та монтаж фото
-              </p>
-            </li>
-            <li className={css.howItWorksListItem}>
-              <div className={css.howItWorksBulletPoint}>1</div>
-              <p className={css.howItWorksListItemText}>
-                Доставка та монтаж фото
-              </p>
-            </li>
-            <li className={css.howItWorksListItem}>
-              <div className={css.howItWorksBulletPoint}>1</div>
-              <p className={css.howItWorksListItemText}>
-                Доставка та монтаж фото
-              </p>
-            </li>
-          </ul>
-        </div>
+      <HowItWorks/>
+       
         <div className={css.whyWe}>
           <h2 className={css.whyWeHeader}>Чому саме Party Tools</h2>
           <ul className={css.whyWeList}>

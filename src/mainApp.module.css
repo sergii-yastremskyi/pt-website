@@ -25,41 +25,6 @@
   
 }
 
-.howItsWorks {
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  align-items: center;
-  padding: 20px;
-}
-.howItsWorksHeader {
-}
-.howItWorksList {
-  padding: 0px;
-  display: flex;
-  flex-direction: column;
-  list-style: none;
-}
-.howItWorksListItem {
-  padding-bottom: 20px;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-}
-.howItWorksBulletPoint {
-  width: 40px;
-  height: 40px;
-  border-width: 2px;
-  background: #ffa600;
-  border-radius: 20px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  color: white;
-}
-.howItWorksListItemText {
-  margin-left: 20px;
-}
 .whyWe {
   height: 90vh;
   max-height: 900px;
