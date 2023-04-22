@@ -1,0 +1,48 @@
+
+.whyWe {
+    height: 90vh;
+    max-height: 900px;
+    width: 100%;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-image: linear-gradient(
+        to bottom,
+        rgba(0, 0, 0, 0.52),
+        rgba(0, 0, 0, 0.73)
+      ),
+      url(../../Assets/img/whyWe.jpg);
+  }
+  .whyWeHeader {
+    color: white;
+  }
+  .whyWeList {
+    padding: 0px;
+    display: flex;
+    flex-direction: column;
+    color: white;
+  }
+  .whyWeListItem {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .whyWeBrLn {
+    height: 1px;
+    width: 100%;
+    opacity: 0.5;
+    background-color: rgb(255, 255, 255);
+  }
+  .whyWeItemText {
+    font-weight: 100;
+    color: white;
+  }
+  .whyWeItemNumber {
+    font-weight: 800;
+    font-size: 52px;
+  }
+  
