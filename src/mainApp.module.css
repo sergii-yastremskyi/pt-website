@@ -14,20 +14,26 @@
 @media screen and (min-width: 1200px) {
   .container {
     width: 1200px;
+    
   }
 }
-
-.content{ touch-action:pan-y;
+body{
+  font-family: 'Roboto';
+}
+.content{ 
+  touch-action:pan-y;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  
+  width: 100vw;
+
 }
 
 .whyWe {
   height: 90vh;
   max-height: 900px;
+  width: 100%;
   padding: 20px;
   display: flex;
   flex-direction: column;

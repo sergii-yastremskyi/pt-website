@@ -1,0 +1,13 @@
+.button {
+    background-color: orange;
+    color: white;
+    border: none;
+    background-repeat: 5px;
+    padding: 0 30px;
+    margin: 0 20px;
+    border-radius: 7px;
+    font-size: 16px;
+    line-height: 60px;
+    font-weight: 700;
+    
+  }

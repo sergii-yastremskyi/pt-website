@@ -53,7 +53,7 @@ export default function Header() {
 
           <SoicialIcons style={(css.icons, css.item)} />
 
-          <button type="button" className={(css.button, css.item)}>
+          <button type="button" className={`${css.buttonContacts} ${css.item}`}>
             Контакти
           </button>
           <ul className={`${css.languageSeletor} ${css.item}`}>
@@ -75,7 +75,7 @@ export default function Header() {
         
          <div className={(css.item)}>
                 <div className={css.rightHeaderGroup}>
-                  <button type="button" className={css.button}>
+                  <button type="button" className={css.buttonContacts}>
                     Контакти
                   </button>
                  <ul className={css.languageSeletorList}>

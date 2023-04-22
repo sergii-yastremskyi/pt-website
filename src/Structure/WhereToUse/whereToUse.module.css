@@ -1,6 +1,6 @@
 .whereToUse {
     height: auto;
-    /* max-height: 900px; */
+    width: 100%;
     padding: 20px;
     display: flex;
     flex-direction: column;
