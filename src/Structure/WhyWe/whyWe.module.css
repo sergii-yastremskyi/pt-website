@@ -10,6 +10,7 @@
     align-items: center;
     background-repeat: no-repeat;
     background-position: center;
+    background-size: cover;
     background-image: linear-gradient(
         to bottom,
         rgba(0, 0, 0, 0.52),
@@ -19,6 +20,7 @@
   }
   .whyWeHeader {
     color: white;
+    font-size: 30px;
   }
   .whyWeList {
     padding: 0px;
@@ -30,6 +32,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    width: 100%;
   }
   .whyWeBrLn {
     height: 1px;
@@ -37,12 +40,23 @@
     opacity: 0.5;
     background-color: rgb(255, 255, 255);
   }
-  .whyWeItemText {
+  .whyWeItemText {padding: 0 20px;
     font-weight: 100;
     color: white;
   }
   .whyWeItemNumber {
     font-weight: 800;
-    font-size: 52px;
+    font-size: 30px;
   }
-  
+  @media screen and (min-width: 1200px) {
+    .whyWeList {flex-direction: row;}
+    .whyWeListItem:not(:last-child){padding-right: 40px;}
+    .whyWeItemNumber {
+     
+      font-size: 52px;
+    }
+    .whyWeHeader {
+      color: white;
+      font-size: 42px;
+    }
+  }
