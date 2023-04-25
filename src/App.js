@@ -8,154 +8,18 @@ import Services from './Structure/Services';
 import WhereToUse from './Structure/WhereToUse';
 import HowItWorks from './Structure/HowItWorks'
 import WhyWe from './Structure/WhyWe'
+import WhatYouGet from './Structure/WhatYouGet'
 function App() {
   return (
     <div className="App">
       <Header />
-    
       <div className={css.content}>
-      <Hero/>
-      <Services/>
-      <WhereToUse/>
-      <HowItWorks/>
-       <WhyWe/>
-      
-        <div className={css.whatYouGet}>
-          <h2 className={css.whatYouGetHeader}>Обираючи нас ви отримуєте</h2>
-          <ul className={css.whatYouGetList}>
-            <li className={css.whatYouGetListItem}>
-              <img
-                className={css.whatYouGetImg}
-                src={number1}
-                alt="Результат 1"
-                width="80"
-                height="80"
-              ></img>
-              <p className={css.whatYouGetItemBold}>Якісне обладнання</p>
-              <p className={css.whatYouGetItemText}>
-                Професійні дзеркальні камери та студійне світло забезпечать
-              </p>
-            </li>
-            <li className={css.whatYouGetListItem}>
-              <img
-                className={css.whatYouGetImg}
-                src={number1}
-                alt="Результат 1"
-                width="80"
-                height="80"
-              ></img>
-              <p className={css.whatYouGetItemBold}>Якісне обладнання</p>
-              <p className={css.whatYouGetItemText}>
-                Професійні дзеркальні камери та студійне світло забезпечать
-              </p>
-            </li>
-            <li className={css.whatYouGetListItem}>
-              <img
-                className={css.whatYouGetImg}
-                src={number1}
-                alt="Результат 1"
-                width="80"
-                height="80"
-              ></img>
-              <p className={css.whatYouGetItemBold}>Якісне обладнання</p>
-              <p className={css.whatYouGetItemText}>
-                Професійні дзеркальні камери та студійне світло забезпечать
-              </p>
-            </li>
-            <li className={css.whatYouGetListItem}>
-              <img
-                className={css.whatYouGetImg}
-                src={number1}
-                alt="Результат 1"
-                width="80"
-                height="80"
-              ></img>
-              <p className={css.whatYouGetItemBold}>Якісне обладнання</p>
-              <p className={css.whatYouGetItemText}>
-                Професійні дзеркальні камери та студійне світло забезпечать
-              </p>
-            </li>
-            <li className={css.whatYouGetListItem}>
-              <img
-                className={css.whatYouGetImg}
-                src={number1}
-                alt="Результат 1"
-                width="80"
-                height="80"
-              ></img>
-              <p className={css.whatYouGetItemBold}>Якісне обладнання</p>
-              <p className={css.whatYouGetItemText}>
-                Професійні дзеркальні камери та студійне світло забезпечать
-              </p>
-            </li>
-            <li className={css.whatYouGetListItem}>
-              <img
-                className={css.whatYouGetImg}
-                src={number1}
-                alt="Результат 1"
-                width="80"
-                height="80"
-              ></img>
-              <p className={css.whatYouGetItemBold}>Якісне обладнання</p>
-              <p className={css.whatYouGetItemText}>
-                Професійні дзеркальні камери та студійне світло забезпечать
-              </p>
-            </li>
-          </ul>
-        </div>
-        <div className={css.smallPicturesBlock}>
-          <ul className={css.smallPicturesBlockList}>
-            <li className={css.smallPicturesBlockListItem}>
-              <img
-                src="https://picsum.photos/160/90"
-                alt="Girl in a jacket"
-                width="160"
-                height="123"
-              />
-            </li>
-            <li className={css.smallPicturesBlockListItem}>
-              <img
-                src="https://picsum.photos/160/90"
-                alt="Girl in a jacket"
-                width="160"
-                height="123"
-              />
-            </li>
-            <li className={css.smallPicturesBlockListItem}>
-              <img
-                src="https://picsum.photos/160/90"
-                alt="Girl in a jacket"
-                width="160"
-                height="123"
-              />
-            </li>
-            <li className={css.smallPicturesBlockListItem}>
-              <img
-                src="https://picsum.photos/160/90"
-                alt="Girl in a jacket"
-                width="160"
-                height="123"
-              />
-            </li>
-            <li className={css.smallPicturesBlockListItem}>
-              <img
-                src="https://picsum.photos/160/90"
-                alt="Girl in a jacket"
-                width="160"
-                height="123"
-              />
-            </li>
-            <li className={css.smallPicturesBlockListItem}>
-              <img
-                src="https://picsum.photos/160/123"
-                alt="Girl in a jacket"
-                width="160"
-                height="123"
-              />
-            </li>
-          </ul>
-        </div>
-
+        <Hero/>
+        <Services/>
+        <WhereToUse/>
+        <HowItWorks/>
+        <WhyWe/>
+        <WhatYouGet/>
         <div className={css.clients}>
           <p className={css.clientsHeader}>Наші клієнти</p>
           <ul className={css.clientsList}>

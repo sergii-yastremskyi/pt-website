@@ -27,7 +27,8 @@
   align-items: center;
   justify-content: center;
   touch-action:pan-y;
-
+width: 100%;
+box-sizing: border-box;
 }
 .logo {
   max-width: 200px;
