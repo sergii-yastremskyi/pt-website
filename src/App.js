@@ -2,7 +2,7 @@ import './App.css';
 import Header from './Structure/Header';
 import logoWhite from './Assets/img/party_tools_logo_white.png';
 import css from './mainApp.module.css';
-import number1 from './Assets/img/number1.png';
+
 import Hero from './Structure/Hero';
 import Services from './Structure/Services';
 import WhereToUse from './Structure/WhereToUse';
@@ -11,7 +11,7 @@ import WhyWe from './Structure/WhyWe'
 import WhatYouGet from './Structure/WhatYouGet'
 function App() {
   return (
-    <div className="App">
+    <div className={css.app}>
       <Header />
       <div className={css.content}>
         <Hero/>

@@ -1,11 +1,14 @@
 .whatYouGet {
     height: auto;
     /* max-height: 900px; */
+    width: 100%;
+    max-width: 1200px;
     padding: 105px 20px 40px 20px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+
   }
   .whatYouGetHeader {
   }
@@ -16,13 +19,16 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    flex-wrap: wrap;
   }
   .whatYouGetListItem {
+    
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     padding: 20px;
+    max-width: 360px;
   }
   .whatYouGetImg {width:80px;
     height:80px;
@@ -35,4 +41,13 @@
   .whatYouGetItemText {
     text-align: center;
     font-size: 18px;
+    
+  }
+
+
+  @media screen and (min-width: 1200px) {
+    .whatYouGetList {
+      flex-direction: row;
+    }
+  
   }

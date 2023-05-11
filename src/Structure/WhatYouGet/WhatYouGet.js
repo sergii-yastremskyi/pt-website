@@ -6,23 +6,25 @@ import number3 from '../../Assets/img/number3.png'
 import number4 from '../../Assets/img/number4.png'
 import number5 from '../../Assets/img/number5.png'
 import number6 from '../../Assets/img/number6.png'
+import WhatYouGetListItem from './WhatYouGetListItem'
 
 
 export default function WhatYouGet() {
-const whatYouGetContent=[{img:number1,header:'',text:''}]
+const whatYouGetContent=[
+  {img:number1,header:'Якісне обладнання',text:'Професійні дзеркальні камери та студійне світло забезпечать'},
+  {img:number2,header:'Студійне світло',text:'Використовуючи професійне світло ми отримуємо м&lt;яке освітлення в будь-яких умовах'},
+  {img:number3,header:'Індивідуальний підхід',text:'Велика кількість різноманітних послуг та опцій вирішують будь-яке завдання'},
+  {img:number4,header:'Професійна команда',text:'Наш досвід дозволяє організувати захід на найвищому рівні'},
+  {img:number5,header:'Ніяких запізнень',text:'Приїжджаємо заздалегідь та зберігаємо ваш спокій'},
+  {img:number6,header:'Зручна оплата',text:'Працюємо з готівковим і безготівковим розрахунком'},
+]
   return (
    <>  <div className={css.whatYouGet}>
     
    <h2 className={css.whatYouGetHeader}>Обираючи нас ви отримуєте</h2>
    <ul className={css.whatYouGetList}>
-     <li className={css.whatYouGetListItem}>
-       <img alt='' src={whatYouGetContent[0].img} className={css.whatYouGetIm}/>
-       <p className={css.whatYouGetItemBold}>Якісне обладнання</p>
-       <p className={css.whatYouGetItemText}>
-         Професійні дзеркальні камери та студійне світло забезпечать
-       </p>
-     </li>
-     
+    <WhatYouGetListItem content={whatYouGetContent}/>
+    
    </ul>
  </div> </>
   )
