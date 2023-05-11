@@ -36,8 +36,8 @@
   } */
 
   .servicesImg{
-    width: 200px;
-    /* height: 240px; */
+    width: auto;
+    height: 240px;
   }
 
   @media screen and (min-width: 700px) {
