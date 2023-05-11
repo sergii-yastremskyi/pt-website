@@ -2,12 +2,14 @@
     height: auto;
     /* max-height: 900px; */
     width: 100%;
-    max-width: 1200px;
+    max-width: 100%;
+    max-width: 1200pxnp;
     padding: 105px 20px 40px 20px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    box-sizing: border-box;
 
   }
   .whatYouGetHeader {
