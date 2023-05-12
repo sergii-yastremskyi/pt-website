@@ -7,8 +7,8 @@ export default function ServicesListItem({services}) {
    {services.map(item => (
     <li key={nanoid()} className={css.servicesListItem}>
        <img  className={css.servicesImg} src={item.thumbImg} alt=""/>
-     <p> {item.name}</p>
-     <p>{item.description}</p>
+     <p className={css.servicesHeader}> {item.name}</p>
+     <p className={css.servicesDescrioption}>{item.description}</p>
     </li>
   ))
 }

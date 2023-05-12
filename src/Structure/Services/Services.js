@@ -6,10 +6,10 @@ import OrangeButton from '../OrangeButton'
 import photobooth from '../../Assets/img/photobooth.png'
 import chromakey from '../../Assets/img/chromakey.png'
 import selfieMirror from '../../Assets/img/selfieMiirror.png'
-import wifiPrint from '../../Assets/img/wifiPrint.jpg'
-import gifBooth from '../../Assets/img/gifBooth.jpg'
-import instaPrint from '../../Assets/img/instantPrint.jpg'
-import highSelfie from '../../Assets/img/highSelfie.jpg'
+import wifiPrint from '../../Assets/img/wifiPrint.png'
+import gifBooth from '../../Assets/img/gifBooth_big.png'
+import instaPrint from '../../Assets/img/instantPrint.png'
+import highSelfie from '../../Assets/img/highSelfie.png'
 import sharingStation from '../../Assets/img/sharingStation.png'
 
 export default function Services() {
@@ -21,7 +21,7 @@ export default function Services() {
     {name:'Gif Booth',link:'',thumbImg:gifBooth,description:'Відмінний контент для Facebook, Instagram лише за декілька секунд за #хештегом'},
     {name:'Instant Print',link:'',thumbImg:instaPrint,description:'Друк фотографій з Instagram'},
     {name:'High Selfie',link:'',thumbImg:highSelfie,description:'Для випадків, коли звичний ракурс занадто банально'},
-    {name:'Sharing Station',link:'',thumbImg:sharingStation,description:'Надсилайте фото на пошту'}
+    {name:'Sharing Station',link:'',thumbImg:sharingStation,description:'Надсилайте фото на пошту або телефон'}
 ];
 const buttonLabel ='Замовити послугу'
   return (
