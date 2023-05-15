@@ -1,9 +1,10 @@
 .whatYouGet {
     height: auto;
+  
     /* max-height: 900px; */
     width: 100%;
-    max-width: 100%;
-    max-width: 1200pxnp;
+    /* max-width: 100%; */
+    
     padding: 105px 20px 40px 20px;
     display: flex;
     flex-direction: column;
@@ -50,6 +51,7 @@
   @media screen and (min-width: 1200px) {
     .whatYouGetList {
       flex-direction: row;
+      max-width: 1200px;
     }
   
   }
