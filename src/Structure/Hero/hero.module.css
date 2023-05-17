@@ -10,17 +10,31 @@
   align-items: center;
   color: white;
 
-  background: url(../../Assets/img/hero_img.jpg),
-    linear-gradient(to bottom, rgba(0, 0, 0, 1), rgba(10, 19, 27, 1));
+  background: url(../../Assets/img/hero_img.jpg);
+
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
+  position: relative;
+  box-sizing: border-box;
+  z-index: -2;
 }
-.bgImageWrap {
+.gradient {
+  position: absolute;
+  z-index: -1;
+  top: 0px;
+  left: 0px;
+  width: 600px;
+  height: 80vh;
+
+  max-height: 800px;
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 1));
+  box-sizing: border-box;
+  min-width: 100%;
 }
 .heroHeader {
   display: flex;
-
+  z-index: 10;
   justify-content: center;
   align-items: center;
   text-align: center;
@@ -28,6 +42,8 @@
   font-size: 42px;
 }
 .heroContent {
+  font-size: 20px;
+  line-height: 1.5;
   text-align: center;
 }
 .heroInsidecontainer {

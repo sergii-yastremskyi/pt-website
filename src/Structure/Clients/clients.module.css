@@ -6,7 +6,7 @@
   font-size: 30px;
   font-weight: 800;
   text-align: center;
-  margin-bottom: 50px;
+  margin-bottom: 0px;
 }
 .clientsList {
   padding: 0;
@@ -16,6 +16,7 @@
   justify-content: center;
   align-items: center;
   list-style: none;
+  margin: 0;
 }
 .clientsListItem {
   width: 33%;
