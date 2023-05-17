@@ -1,4 +1,6 @@
 .clients {
+  width: 100%;
+  max-width: 480px;
 }
 .clientsHeader {
   font-size: 30px;
@@ -16,8 +18,37 @@
   list-style: none;
 }
 .clientsListItem {
-  width: 175px;
-  height: 175px;
+  width: 33%;
+  /* height: 175px; */
   padding: 10px;
   margin: 0px;
+  padding: 20px;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.clientsImg {
+  max-width: 160px;
+  width: 100%;
+  margin: 0 auto;
+  object-fit: cover;
+}
+
+@media screen and (min-width: 780px) {
+  .clients {
+    max-width: 780px;
+  }
+  .clientsListItem {
+    width: 25%;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .clients {
+    max-width: 1200px;
+  }
+  .clientsListItem {
+    width: 16%;
+  }
 }

@@ -10,11 +10,10 @@
     width: 768px;
   }
 } */
-.app{
-  width:100vw;
+.app {
+  width: 100vw;
   max-width: 100%;
 }
-
 
 /* hide the scrollbar track */
 .app::-webkit-scrollbar-track {
@@ -35,13 +34,12 @@
 @media screen and (min-width: 1200px) {
   .container {
     width: 1200px;
-    
   }
 }
-body{
+body {
   font-family: 'Roboto';
 }
-.content{ 
+.content {
   /* touch-action:pan-y; */
   display: flex;
   flex-direction: column;
@@ -49,7 +47,6 @@ body{
   align-items: center;
   width: 100%;
 }
-
 
 .smallPicturesBlock {
   padding: 45px 10px 90px 10px;
