@@ -6,57 +6,30 @@ import css from './mainApp.module.css';
 import Hero from './Structure/Hero';
 import Services from './Structure/Services';
 import WhereToUse from './Structure/WhereToUse';
-import HowItWorks from './Structure/HowItWorks'
-import WhyWe from './Structure/WhyWe'
-import WhatYouGet from './Structure/WhatYouGet'
+import HowItWorks from './Structure/HowItWorks';
+import WhyWe from './Structure/WhyWe';
+import WhatYouGet from './Structure/WhatYouGet';
 import Clients from './Structure/Clients';
 import SmallImg from './Structure/SmallImg';
+import ContactForm from './Structure/ContactForm';
+
 function App() {
   return (
     <div className={css.app}>
       <Header />
       <div className={css.content}>
-        <Hero/>
-        <Services/>
-        <WhereToUse/>
-        <HowItWorks/>
-        <WhyWe/>
-        <WhatYouGet/>
-        <SmallImg/>
-        <Clients/>
-       
-        <div className={css.contacts}>
-          <p>Контакти</p>
-          <div className={css.contactForm}>
-            <p className={css.contactFormText}>
-              Зв'яжіться з нами або залиште заявку на зворотний дзвінок і наш
-              менеджер зв'яжеться з вами!
-            </p>
-            <form className={css.contactFormForm}>
-              <input
-                placeholder="E-mail"
-                className={css.contactFormInput}
-                type="email"
-              />
-              <input
-                placeholder="Ім'я"
-                className={css.contactFormInput}
-                type="text"
-              />
-              <input
-                placeholder="Телефон"
-                className={css.contactFormInput}
-                type="phone"
-              />
-              <button className={css.contactFormButton} type="button">
-                Надіслати
-              </button>
-            </form>
-          </div>
-        </div>
+        <Hero />
+        <Services />
+        <WhereToUse />
+        <HowItWorks />
+        <WhyWe />
+        <WhatYouGet />
+        <SmallImg />
+        <Clients />
+        <ContactForm />
       </div>
       <div className="callback-form"></div>
-      
+
       {/*FOOOOOOTEEEEEEEEER  */}
       <div className={css.footer}>
         <img className={css.logoWhite} alt="logo" src={logoWhite}></img>
