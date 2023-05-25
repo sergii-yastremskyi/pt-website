@@ -31,7 +31,7 @@ export default function ContactForm() {
     );
   };
   return (
-    <div className={css.contacts}>
+    <div className={css.contacts} id="contacts">
       <h2 className={css.contactsHeader}>Контакти</h2>
       <div className={css.contactsWrapper}>
         <div className={css.contactInfo}>

@@ -3,33 +3,19 @@ import Header from './Structure/Header';
 import logoWhite from './Assets/img/party_tools_logo_white.png';
 import css from './mainApp.module.css';
 
-import Hero from './Structure/Hero';
-import Services from './Structure/Services';
-import WhereToUse from './Structure/WhereToUse';
-import HowItWorks from './Structure/HowItWorks';
-import WhyWe from './Structure/WhyWe';
-import WhatYouGet from './Structure/WhatYouGet';
-import Clients from './Structure/Clients';
-import SmallImg from './Structure/SmallImg';
-import ContactForm from './Structure/ContactForm';
+import { Route, Routes } from 'react-router-dom';
+import Home from './Structure/Pages/Home';
 
 function App() {
   return (
     <div className={css.app}>
       <Header />
-      <div className={css.content}>
-        <Hero />
-        <Services />
-        <WhereToUse />
-        <HowItWorks />
-        <WhyWe />
-        <WhatYouGet />
-        <SmallImg />
-        <Clients />
-        <ContactForm />
-      </div>
+      <div className={css.content}></div>
       <div className="callback-form"></div>
 
+      <Routes>
+        <Route path="/" element={<Home />} />
+      </Routes>
       {/*FOOOOOOTEEEEEEEEER  */}
       <div className={css.footer}>
         <img className={css.logoWhite} alt="logo" src={logoWhite}></img>
