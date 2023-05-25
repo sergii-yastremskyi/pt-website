@@ -8,7 +8,7 @@ import sharedCss from '../Shared/shared.module.css';
 
 export default function Header() {
   const headerMenu = [
-    { text: 'ПОСЛУГИ', link: '/#services' },
+    { text: 'ПОСЛУГИ', link: '/services' },
     { text: 'ПРО НАС', link: '' },
     { text: 'ГАЛЕРЕЯ', link: '' },
   ];
