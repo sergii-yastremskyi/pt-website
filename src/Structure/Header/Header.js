@@ -14,7 +14,7 @@ export default function Header() {
   ];
 
   const desktop = useIsDesktop();
-  console.log('desktop', desktop);
+  // console.log('desktop', desktop);
   let [animate, setAnimate] = useState(false);
   const dropMenuAnimator = () => {
     setAnimate(!animate);

@@ -12,7 +12,7 @@ export default function ContactForm() {
     handleSubmit,
     formState: { errors },
   } = useForm();
-  console.log(errors);
+
   const [contactNumber, setContactNumber] = useState('000000');
   const generateContactNumber = () => {
     const numStr = '000000' + ((Math.random() * 1000000) | 0);
@@ -23,10 +23,10 @@ export default function ContactForm() {
     generateContactNumber();
     sendForm('service_5h0tosq', 'template_ze0t61w', '#contact-form').then(
       function (response) {
-        console.log('SUCCESS!', response.status, response.text);
+        // console.log('SUCCESS!', response.status, response.text);
       },
       function (error) {
-        console.log('FAILED...', error);
+        // console.log('FAILED...', error);
       }
     );
   };
@@ -64,7 +64,7 @@ export default function ContactForm() {
             id="contact-form"
             className={css.contactFormForm}
           >
-            {console.log('window location...', window.location.href)}
+            {/* {console.log('window location...', window.location.href)} */}
             <input type="hidden" name="contact_number" value={contactNumber} />
             <input type="hidden" name="webpage" value={window.location.href} />
             <input
@@ -79,7 +79,7 @@ export default function ContactForm() {
               className={css.contactFormInput}
               type="text"
             />
-            {console.log('errors', errors)}
+            {/* {console.log('errors', errors)} */}
             {errors.name?.message && <p>{errors.name?.message}</p>}
             <input
               {...register('phone', {

@@ -9,19 +9,29 @@ import WhatYouGet from '../../Structure/WhatYouGet';
 import Clients from '../../Structure/Clients';
 import SmallImg from '../../Structure/SmallImg';
 import ContactForm from '../../Structure/ContactForm';
-
+import { useRef } from 'react';
 export default function Home() {
+  const servicesAnchor = useRef(null);
+  // const contactsAnchor = document.getElementById('contacts1');
+  const scrollIntoServices = () => {
+    servicesAnchor.current.scrollIntoView({ behavior: 'smooth' });
+  };
   return (
     <>
+      <button type="button" onClick={scrollIntoServices}>
+        Services temp button
+      </button>
       <Hero />
-      <Services id="services" />
+      <div ref={servicesAnchor}></div>
+      <Services id="services1" />
+
       <WhereToUse />
       <HowItWorks />
       <WhyWe />
       <WhatYouGet />
       <SmallImg />
       <Clients />
-      <ContactForm />
+      <ContactForm id="contacts1" />
     </>
   );
 }
