@@ -72,6 +72,7 @@ export default function Services() {
       description: 'Надсилайте фото на пошту або телефон',
     },
   ];
+
   const buttonLabel = 'Замовити послугу';
   return (
     <div id={elemId} className={`${css.services} ${sharedCss.container}`}>

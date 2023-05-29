@@ -6,29 +6,35 @@ import SoicialIcons from '../SocialIcons/';
 import useIsDesktop from '../../hooks/useIsDesktop';
 import sharedCss from '../Shared/shared.module.css';
 import { useNavigate } from 'react-router-dom';
+import useClickHandler from '../../hooks/useClickHandler';
 export default function Header() {
-  const headerMenu = [
-    { text: 'ПОСЛУГИ', link: '/services' },
-    { text: 'ПРО НАС', link: '' },
-    { text: 'ГАЛЕРЕЯ', link: '' },
-  ];
-
   const desktop = useIsDesktop();
   // console.log('desktop', desktop);
   let [animate, setAnimate] = useState(false);
   const dropMenuAnimator = () => {
     setAnimate(!animate);
   };
-  const navigate = useNavigate();
-  const handleClick = e => {
-    const name = e.target.name;
-    const elem = document.getElementById(name);
-    if (!elem) {
-      navigate({ pathname: '/', search: '?scroll=contacts' });
-    } else {
-      elem.scrollIntoView({ behavior: 'smooth' });
-    }
-  };
+  // const navigate = useNavigate();
+  // const handleClick = e => {
+  //   // useClickHandler(e);
+  //   const name = e.target.name;
+  //   const elem = document.getElementById(name);
+  //   if (!elem) {
+  //     navigate({ pathname: '/', search: '?scroll=contacts' });
+  //   } else {
+  //     elem.scrollIntoView({ behavior: 'smooth' });
+  //   }
+  // };
+  const contactsHandlerClick = useClickHandler({ name: 'contacts' });
+  const servicesHandlerClick = useClickHandler({ name: 'services' });
+  const aboutHandlerClick = useClickHandler({ name: 'about' });
+  const galleryHandlerClick = useClickHandler({ name: 'gallery' });
+
+  const headerMenu = [
+    { text: 'ПОСЛУГИ', link: '', clickHandler: servicesHandlerClick },
+    { text: 'ПРО НАС', link: '', clickHandler: aboutHandlerClick },
+    { text: 'ГАЛЕРЕЯ', link: '', clickHandler: galleryHandlerClick },
+  ];
 
   return (
     <header className={css.header}>
@@ -65,7 +71,7 @@ export default function Header() {
 
             <button
               name="contacts"
-              onClick={handleClick}
+              onClick={contactsHandlerClick}
               type="button"
               className={`${css.buttonContacts} ${css.item}`}
             >
@@ -94,7 +100,7 @@ export default function Header() {
             <div className={css.rightHeaderGroup}>
               <button
                 name="contacts"
-                onClick={handleClick}
+                onClick={contactsHandlerClick}
                 type="button"
                 className={css.buttonContacts}
               >

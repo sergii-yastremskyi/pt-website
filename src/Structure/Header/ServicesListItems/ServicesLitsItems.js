@@ -7,7 +7,14 @@ export default function ServicesLitsItems({ listItems }) {
     <>
       {listItems.map(item => (
         <li key={nanoid()} className={css.servisecListItem}>
-          <Link to={item.link}>{item.text}</Link>
+          <button
+            className={css.servicesButton}
+            type="button"
+            onClick={item.clickHandler}
+          >
+            {item.text}
+          </button>
+          {/* <Link to={item.link}>{item.text}</Link> */}
         </li>
       ))}
     </>
