@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/pt-website/static/css/main.83840cbd.css",
-    "main.js": "/pt-website/static/js/main.1a98feda.js",
+    "main.css": "/pt-website/static/css/main.f2ee7cef.css",
+    "main.js": "/pt-website/static/js/main.8e64ab4f.js",
     "static/js/787.28cb0dcd.chunk.js": "/pt-website/static/js/787.28cb0dcd.chunk.js",
     "static/media/hero_img.jpg": "/pt-website/static/media/hero_img.9b057de9e16a3e4d72c6.jpg",
     "static/media/whyWe.jpg": "/pt-website/static/media/whyWe.282c0b502915f907669a.jpg",
@@ -35,6 +35,7 @@
     "static/media/toyota.png": "/pt-website/static/media/toyota.92cbfabe9d04f537f221.png",
     "static/media/Kia-logo-2560x1440_c.png": "/pt-website/static/media/Kia-logo-2560x1440_c.1e76d15769d85b1d0cae.png",
     "static/media/Hyundai_Logo_copy.png": "/pt-website/static/media/Hyundai_Logo_copy.53425914b48e3097db06.png",
+    "static/media/ServiceBtnArrow.png": "/pt-website/static/media/ServiceBtnArrow.de195d34ebe3feed2977.png",
     "static/media/jack-daniels-logo-pn.png": "/pt-website/static/media/jack-daniels-logo-pn.f55db09d967019fc3691.png",
     "static/media/Bayadera.png": "/pt-website/static/media/Bayadera.c74c306080162f13cf62.png",
     "static/media/Mcdonalds_copy.png": "/pt-website/static/media/Mcdonalds_copy.85810c2546073ff25c14.png",
@@ -49,12 +50,12 @@
     "static/media/icons8-instagram-circle-120.svg": "/pt-website/static/media/icons8-instagram-circle-120.98b14b62862f13574c6f2760f4d8919e.svg",
     "index.html": "/pt-website/index.html",
     "static/media/icons8-facebook-100.svg": "/pt-website/static/media/icons8-facebook-100.29ab4b1b353af7f740a92c129d0e41b5.svg",
-    "main.83840cbd.css.map": "/pt-website/static/css/main.83840cbd.css.map",
-    "main.1a98feda.js.map": "/pt-website/static/js/main.1a98feda.js.map",
+    "main.f2ee7cef.css.map": "/pt-website/static/css/main.f2ee7cef.css.map",
+    "main.8e64ab4f.js.map": "/pt-website/static/js/main.8e64ab4f.js.map",
     "787.28cb0dcd.chunk.js.map": "/pt-website/static/js/787.28cb0dcd.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.83840cbd.css",
-    "static/js/main.1a98feda.js"
+    "static/css/main.f2ee7cef.css",
+    "static/js/main.8e64ab4f.js"
   ]
 }
