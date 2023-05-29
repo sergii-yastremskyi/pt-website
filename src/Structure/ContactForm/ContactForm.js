@@ -4,9 +4,15 @@ import { useForm } from 'react-hook-form';
 import { init, sendForm } from 'emailjs-com';
 import useIsDesktop from '../../hooks/useIsDesktop';
 import SoicialIcons from '../SocialIcons/SoicialIcons';
+import { useScrollTo } from '../WhereToUse/useScrollTo';
 init('Sq_qfhahOeMrA9sH1');
 export default function ContactForm() {
   const contacts = [{ text: '+38 067 994 4144' }];
+
+  const elemId = 'contacts';
+
+  useScrollTo(elemId);
+
   const {
     register,
     handleSubmit,
@@ -31,7 +37,7 @@ export default function ContactForm() {
     );
   };
   return (
-    <div className={css.contacts} id="contacts">
+    <div className={css.contacts} id={elemId}>
       <h2 className={css.contactsHeader}>Контакти</h2>
       <div className={css.contactsWrapper}>
         <div className={css.contactInfo}>

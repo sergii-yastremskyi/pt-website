@@ -5,7 +5,7 @@ import ServicesLitsItems from './ServicesListItems/ServicesLitsItems';
 import SoicialIcons from '../SocialIcons/';
 import useIsDesktop from '../../hooks/useIsDesktop';
 import sharedCss from '../Shared/shared.module.css';
-
+import { useNavigate } from 'react-router-dom';
 export default function Header() {
   const headerMenu = [
     { text: 'ПОСЛУГИ', link: '/services' },
@@ -19,9 +19,15 @@ export default function Header() {
   const dropMenuAnimator = () => {
     setAnimate(!animate);
   };
-
-  const handleClick = () => {
-    window.location.href = '/#contacts';
+  const navigate = useNavigate();
+  const handleClick = e => {
+    const name = e.target.name;
+    const elem = document.getElementById(name);
+    if (!elem) {
+      navigate({ pathname: '/', search: '?scroll=contacts' });
+    } else {
+      elem.scrollIntoView({ behavior: 'smooth' });
+    }
   };
 
   return (
@@ -58,6 +64,7 @@ export default function Header() {
             <SoicialIcons style={(css.icons, css.item)} />
 
             <button
+              name="contacts"
               onClick={handleClick}
               type="button"
               className={`${css.buttonContacts} ${css.item}`}
@@ -86,6 +93,7 @@ export default function Header() {
           <div className={css.item}>
             <div className={css.rightHeaderGroup}>
               <button
+                name="contacts"
                 onClick={handleClick}
                 type="button"
                 className={css.buttonContacts}

@@ -11,8 +11,13 @@ import gifBooth from '../../Assets/img/gifBooth_big.png';
 import instaPrint from '../../Assets/img/instantPrint.png';
 import highSelfie from '../../Assets/img/highSelfie.png';
 import sharingStation from '../../Assets/img/sharingStation.png';
+import { useScrollTo } from '../WhereToUse/useScrollTo';
+import { useNavigate } from 'react-router-dom';
 
 export default function Services() {
+  const elemId = 'services';
+  useScrollTo(elemId);
+
   const serivcesObj = [
     {
       name: 'Photobooth',
@@ -69,7 +74,7 @@ export default function Services() {
   ];
   const buttonLabel = 'Замовити послугу';
   return (
-    <div id="services" className={`${css.services} ${sharedCss.container}`}>
+    <div id={elemId} className={`${css.services} ${sharedCss.container}`}>
       <h2>Наші послуги</h2>
 
       <ServicesList services={serivcesObj} />

@@ -12,10 +12,8 @@ import ContactForm from '../../Structure/ContactForm';
 import { useRef } from 'react';
 import { useParams, useSearchParams } from 'react-router-dom';
 export default function Home() {
+  const params = useParams();
   let url = useSearchParams();
-  useEffect(() => {
-    console.log('useEffect URL', url);
-  }, [url]);
   const servicesAnchor = useRef(null);
   // const contactsAnchor = document.getElementById('contacts1');
   const scrollIntoServices = () => {
@@ -36,7 +34,9 @@ export default function Home() {
       <WhatYouGet />
       <SmallImg />
       <Clients />
-      <ContactForm id="contacts1" />
+      <div id="">
+        <ContactForm id="contacts1" />
+      </div>
     </div>
   );
 }
