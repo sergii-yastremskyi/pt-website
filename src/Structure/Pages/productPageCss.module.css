@@ -1,0 +1,38 @@
+.photobooth {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  max-width: 400px;
+  justify-content: center;
+  align-items: center;
+}
+h2 {
+  font-size: 34px;
+}
+.productHero {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  box-sizing: border-box;
+}
+.productImage {
+}
+.photoBoothHeroImg {
+  width: 100%;
+}
+.heroDescList {
+}
+.heroListItem {
+  font-size: 14px;
+  line-height: 2.5;
+  font-weight: 300;
+}
+
+@media screen and (min-width: 700px) {
+  .productHero {
+    flex-direction: row;
+  }
+}

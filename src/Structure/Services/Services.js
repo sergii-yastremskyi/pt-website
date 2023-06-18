@@ -11,7 +11,7 @@ import gifBooth from '../../Assets/img/gifBooth_big.png';
 import instaPrint from '../../Assets/img/instantPrint.png';
 import highSelfie from '../../Assets/img/highSelfie.png';
 import sharingStation from '../../Assets/img/sharingStation.png';
-import { useScrollTo } from '../WhereToUse/useScrollTo';
+import { useScrollTo } from '../../hooks/useScrollTo';
 import { useNavigate } from 'react-router-dom';
 
 export default function Services() {
@@ -21,47 +21,47 @@ export default function Services() {
   const serivcesObj = [
     {
       name: 'Photobooth',
-      link: '',
+      link: '/photo-booth',
       thumbImg: photobooth,
       description:
         'Лише декілька хвилин і яскраві спогади залишаться з вами у вигляді роздрукованого фото',
     },
     {
       name: 'Photobooth with Chromakey',
-      link: '',
+      link: '/chromakey',
       thumbImg: chromakey,
       description: 'Дозволяє вибирати будь-яке зображення на фон',
     },
     {
       name: 'Selfie Mirror',
-      link: '',
+      link: '/selfie-mirror',
       thumbImg: selfieMirror,
       description:
         'Яскраві анімації та голосовий супровід допоможуть зробити ідеальне селфі',
     },
     {
       name: 'Wi-Fi Print',
-      link: '',
+      link: '/wifi-print',
       thumbImg: wifiPrint,
       description:
         'Допоможе легко та швидко розширити фотозону до масштабу заходу',
     },
     {
       name: 'Gif Booth',
-      link: '',
+      link: '/gif-booth',
       thumbImg: gifBooth,
       description:
         'Відмінний контент для Facebook, Instagram лише за декілька секунд за #хештегом',
     },
     {
       name: 'Instant Print',
-      link: '',
+      link: '/instant-print',
       thumbImg: instaPrint,
       description: 'Друк фотографій з Instagram',
     },
     {
       name: 'High Selfie',
-      link: '',
+      link: '/high-selfie',
       thumbImg: highSelfie,
       description: 'Для випадків, коли звичний ракурс занадто банально',
     },

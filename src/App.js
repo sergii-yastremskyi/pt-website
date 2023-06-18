@@ -2,10 +2,15 @@ import './App.css';
 import Header from './Structure/Header';
 import logoWhite from './Assets/img/party_tools_logo_white.png';
 import css from './mainApp.module.css';
-
+import PhotoBooth from './Structure/Pages/Photobooth/PhotoBooth';
 import { Route, Routes } from 'react-router-dom';
 import Home from './Structure/Pages/Home';
-
+import Chromakey from './Structure/Pages/Chromakey';
+import SelfieMirror from './Structure/Pages/SelfieMirror';
+import WifiPrint from './Structure/Pages/WifiPrint';
+import GifBooth from './Structure/Pages/GifBooth';
+import InstantPrint from './Structure/Pages/InstantPrint';
+import HighSelfie from './Structure/Pages/HighSelfie';
 function App() {
   return (
     <div className={css.app}>
@@ -15,6 +20,13 @@ function App() {
 
       <Routes>
         <Route path="/" element={<Home />} />
+        <Route path="/photo-booth" element={<PhotoBooth />} />
+        <Route path="/chromakey" element={<Chromakey />} />
+        <Route path="/selfie-mirror" element={<SelfieMirror />} />
+        <Route path="/wifi-print" element={<WifiPrint />} />
+        <Route path="/gif-booth" element={<GifBooth />} />
+        <Route path="/instant-print" element={<InstantPrint />} />
+        <Route path="/high-selfie" element={<HighSelfie />} />
       </Routes>
       {/*FOOOOOOTEEEEEEEEER  */}
       <div className={css.footer}>

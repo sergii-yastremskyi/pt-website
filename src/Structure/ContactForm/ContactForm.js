@@ -4,7 +4,7 @@ import { useForm } from 'react-hook-form';
 import { init, sendForm } from 'emailjs-com';
 import useIsDesktop from '../../hooks/useIsDesktop';
 import SoicialIcons from '../SocialIcons/SoicialIcons';
-import { useScrollTo } from '../WhereToUse/useScrollTo';
+import { useScrollTo } from '../../hooks/useScrollTo';
 init('Sq_qfhahOeMrA9sH1');
 export default function ContactForm() {
   const contacts = [{ text: '+38 067 994 4144' }];

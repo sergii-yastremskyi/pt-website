@@ -11,7 +11,7 @@ export default function useClickHandler(prop) {
 
     const elem = document.getElementById(name);
     if (!elem) {
-      navigate({ pathname: '/', search: '?scroll=contacts' });
+      navigate({ pathname: '/', search: `?scroll=${name}` });
     } else {
       elem.scrollIntoView({ behavior: 'smooth' });
     }
