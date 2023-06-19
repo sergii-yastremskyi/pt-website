@@ -1,4 +1,4 @@
-import  { useEffect, useState } from 'react';
+import { useEffect, useState } from 'react';
 import throttle from 'lodash.throttle';
 export default function useIsDesktop() {
   const [windowWidth, setWindowWidth] = useState(window.innerWidth);

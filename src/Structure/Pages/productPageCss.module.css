@@ -5,6 +5,8 @@
   max-width: 400px;
   justify-content: center;
   align-items: center;
+  padding: 0 20px;
+  box-sizing: border-box;
 }
 h2 {
   font-size: 34px;
@@ -15,7 +17,7 @@ h2 {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 20px;
+
   box-sizing: border-box;
 }
 .productImage {
@@ -29,6 +31,31 @@ h2 {
   font-size: 14px;
   line-height: 2.5;
   font-weight: 300;
+}
+
+.photoSection {
+  width: 100%;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.photoSectionHeader {
+  align-self: flex-start;
+}
+.photoList {
+}
+.photoSectionHeader {
+}
+.photoListItem {
+  font-size: 14px;
+  line-height: 1.5;
+  font-weight: 300;
+  margin-bottom: 20px;
+}
+.photoboothSampleImg {
+  width: 100%;
 }
 
 @media screen and (min-width: 700px) {

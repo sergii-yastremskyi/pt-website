@@ -41,6 +41,7 @@ export default function Header() {
       {!desktop && (
         <div className={css.burgerBar}>
           <div
+            id="menu"
             onClick={dropMenuAnimator}
             className={`${css.menuBtn} ${animate && css.open}`}
           >

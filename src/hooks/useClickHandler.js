@@ -5,7 +5,7 @@ export default function useClickHandler(prop) {
   const navigate = useNavigate();
 
   const name = prop.name;
-  console.log('insideHook', name);
+
   const handleClick = () => {
     // useClickHandler(e);
 
