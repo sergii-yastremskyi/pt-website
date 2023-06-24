@@ -1,3 +1,12 @@
+.container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 60px;
+  box-sizing: border-box;
+}
 .photobooth {
   width: 100%;
   display: flex;
@@ -9,7 +18,15 @@
   box-sizing: border-box;
 }
 h2 {
-  font-size: 34px;
+  font-size: 30px;
+  margin: 0;
+  font-weight: 600;
+  text-align: center;
+  padding-bottom: 20px;
+}
+h3 {
+  font-size: 23px;
+  margin: 0;
 }
 .productHero {
   width: 100%;
@@ -17,7 +34,7 @@ h2 {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-
+  margin-bottom: 60px;
   box-sizing: border-box;
 }
 .productImage {
@@ -40,6 +57,7 @@ h2 {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  margin-bottom: 60px;
 }
 .photoSectionHeader {
   align-self: flex-start;
@@ -56,6 +74,103 @@ h2 {
 }
 .photoboothSampleImg {
   width: 100%;
+}
+.branding {
+  margin-bottom: 60px;
+}
+.brandingDesc {
+  font-size: 18px;
+  line-height: 1.4;
+  font-weight: 300;
+  text-align: center;
+}
+.brandingList {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0;
+}
+.brandingListItem {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.brandingListItem:not(:last-child) {
+  padding-bottom: 20px;
+}
+.brandingListDesc {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 5px;
+  font-size: 18px;
+  line-height: 1.35;
+  font-weight: 300;
+}
+.brandingListImg {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 20px;
+}
+.brandingListPrice {
+  margin: 5px;
+  font-size: 12px;
+  line-height: 1.35;
+  font-weight: 300;
+  color: #7a7a7a;
+}
+.pricePackageList {
+  width: 100%;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.pricePackageCard {
+  border: 1px solid #e0e6ed;
+  border-radius: 9px;
+  width: 100%;
+  box-sizing: border-box;
+  padding: 40px 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.pricePackageCard:not(:last-child) {
+  margin-bottom: 30px;
+}
+.pricePackageTitle {
+  margin-bottom: 30px;
+  font-weight: 600;
+}
+.pricePackagePrice {
+  font-size: 30px;
+  font-weight: 600;
+}
+.pricePackegeDescList {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  list-style: none;
+  padding: 0;
+  margin-bottom: 20px;
+}
+.pricePackegeDescListItem {
+  font-size: 12px;
+  line-height: 24px;
+  font-weight: 300;
+  padding: 10px;
 }
 
 @media screen and (min-width: 700px) {

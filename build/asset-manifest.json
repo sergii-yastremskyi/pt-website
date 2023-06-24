@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/pt-website/static/css/main.ba8ef0c2.css",
-    "main.js": "/pt-website/static/js/main.20895042.js",
+    "main.css": "/pt-website/static/css/main.012e7c00.css",
+    "main.js": "/pt-website/static/js/main.6ce06498.js",
     "static/js/787.28cb0dcd.chunk.js": "/pt-website/static/js/787.28cb0dcd.chunk.js",
     "static/media/PhotoBoothSample.jpg": "/pt-website/static/media/PhotoBoothSample.0e795f67aa3e86ed5c49.jpg",
     "static/media/photoBoothHEroImg.png": "/pt-website/static/media/photoBoothHEroImg.9a270df9ee0f1d17ae7d.png",
@@ -12,8 +12,11 @@
     "static/media/instantPrint.png": "/pt-website/static/media/instantPrint.f7f10a65c28dbef5ba5f.png",
     "static/media/gifBooth_big.png": "/pt-website/static/media/gifBooth_big.8cad73bafac89592c89c.png",
     "static/media/SmallImg2.jpg": "/pt-website/static/media/SmallImg2.2b555f231b4f628ac413.jpg",
+    "static/media/photoBoothBranding2.png": "/pt-website/static/media/photoBoothBranding2.ea2aeab35b357887dfe7.png",
+    "static/media/photoBoothBranding1.png": "/pt-website/static/media/photoBoothBranding1.88f617b59a6b2828a3d5.png",
     "static/media/photobooth.png": "/pt-website/static/media/photobooth.17a26b7ed142737ca2c9.png",
     "static/media/selfieMiirror.png": "/pt-website/static/media/selfieMiirror.7fe3879f8ce4775ec052.png",
+    "static/media/photoBoothBranding3.png": "/pt-website/static/media/photoBoothBranding3.e8349992baf0b476d25e.png",
     "static/media/SmallImg1.jpg": "/pt-website/static/media/SmallImg1.a0d17546ca2236061fb2.jpg",
     "static/media/sharingStation.png": "/pt-website/static/media/sharingStation.74759f96461815a30e4e.png",
     "static/media/SmallImg5.jpg": "/pt-website/static/media/SmallImg5.36dbe9bbd715edde566f.jpg",
@@ -52,12 +55,12 @@
     "static/media/icons8-instagram-circle-120.svg": "/pt-website/static/media/icons8-instagram-circle-120.98b14b62862f13574c6f2760f4d8919e.svg",
     "index.html": "/pt-website/index.html",
     "static/media/icons8-facebook-100.svg": "/pt-website/static/media/icons8-facebook-100.29ab4b1b353af7f740a92c129d0e41b5.svg",
-    "main.ba8ef0c2.css.map": "/pt-website/static/css/main.ba8ef0c2.css.map",
-    "main.20895042.js.map": "/pt-website/static/js/main.20895042.js.map",
+    "main.012e7c00.css.map": "/pt-website/static/css/main.012e7c00.css.map",
+    "main.6ce06498.js.map": "/pt-website/static/js/main.6ce06498.js.map",
     "787.28cb0dcd.chunk.js.map": "/pt-website/static/js/787.28cb0dcd.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.ba8ef0c2.css",
-    "static/js/main.20895042.js"
+    "static/css/main.012e7c00.css",
+    "static/js/main.6ce06498.js"
   ]
 }

@@ -13,6 +13,7 @@ import highSelfie from '../../Assets/img/highSelfie.png';
 import sharingStation from '../../Assets/img/sharingStation.png';
 import { useScrollTo } from '../../hooks/useScrollTo';
 import { useNavigate } from 'react-router-dom';
+import useScrollToPages from '../../hooks/useScrollToPages';
 
 export default function Services() {
   const elemId = 'services';
@@ -74,12 +75,16 @@ export default function Services() {
   ];
 
   const buttonLabel = 'Замовити послугу';
+  const scroll = () => {
+    const elem = document.getElementById('contacts');
+    elem.scrollIntoView({ behavior: 'smooth' });
+  };
   return (
     <div id={elemId} className={`${css.services} ${sharedCss.container}`}>
       <h2>Наші послуги</h2>
 
       <ServicesList services={serivcesObj} />
-      <OrangeButton label={buttonLabel} />
+      <OrangeButton onPress={scroll} label={buttonLabel} />
     </div>
   );
 }

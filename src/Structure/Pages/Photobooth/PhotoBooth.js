@@ -9,6 +9,12 @@ import useScrollToPages from '../../../hooks/useScrollToPages';
 import useClickHandler from '../../../hooks/useClickHandler';
 import PhotoListItem from './PhotoListItem';
 import photoBoothSample from '../../../Assets/img/PhotoBoothSample.jpg';
+import brandingImg1 from '../../../Assets/img/photoBoothBranding1.png';
+import brandingImg2 from '../../../Assets/img/photoBoothBranding2.png';
+import brandingImg3 from '../../../Assets/img/photoBoothBranding3.png';
+import PhotoBoothBrandingListItem from './PhotoBoothBrandingListItem';
+import PricePackageListItem from './pricePackageListItem';
+import PossibilitiesListItem from './PossibilitiesListItem';
 export default function PhotoBooth() {
   useScrollToPages('photobooth');
   const heroDescContent = [
@@ -21,6 +27,52 @@ export default function PhotoBooth() {
     'Розміри фото 10х15 см, 5х15 см (смужки), 15х21 см (великий формат фотографій, замовляється окремо)',
     'Створення колажу з декількох фотографій, розміщуючи їх на одному знімку',
   ];
+  const brandingContent = [
+    { img: brandingImg1, desc: 'Брендинг задньої панелі', price: '1500' },
+    { img: brandingImg2, desc: 'Брендинг передньої панелі', price: '1500 грн' },
+    { img: brandingImg3, desc: 'Повний брендинг фотобудки', price: '2500 грн' },
+  ];
+  const pricePackageContent = [
+    {
+      title: 'Мінімальний',
+      desc: [
+        '3 години роботи',
+        'Доставка в межах Києва',
+        'Безлімітний друк',
+        'Аксесуари для фото',
+        'Брендинг фото',
+        'Робота персоналу',
+      ],
+      price: '9000 грн',
+    },
+    {
+      title: 'Оптимальний',
+      desc: [
+        '4 години роботи',
+        'Доставка в межах Києва',
+        'Безлімітний друк',
+        'Аксесуари для фото',
+        'Брендинг фото',
+        'Робота персоналу',
+      ],
+      price: '11000 грн',
+    },
+    {
+      title: 'Преміум',
+      desc: [
+        '4 години роботи',
+        'Доставка в межах Києва',
+        'Безлімітний друк',
+        'Аксесуари для фото',
+        'Брендинг фото',
+        'Робота персоналу',
+        'Хостес',
+        'Шерінг станція',
+      ],
+      price: '14000 грн',
+    },
+  ];
+  const possibilitiesContent = [{ desc: '11111' }];
   const contactsHandlerClick = useClickHandler({ name: 'contacts' });
   return (
     <div id="photobooth" className={css.photobooth}>
@@ -50,6 +102,28 @@ export default function PhotoBooth() {
           src={photoBoothSample}
           alt="Фотобудка"
         />
+      </div>
+      <div className={`${css.branding} ${css.container}`}>
+        <h2 className={css.brandingHeader}>Брендинг</h2>
+        <p className={css.brandingDesc}>
+          Одна з додаткових опцій — брендування фотобудки. Це може бути логотип,
+          #хештег заходу, або цільове послання{' '}
+        </p>
+        <ul className={css.brandingList}>
+          <PhotoBoothBrandingListItem content={brandingContent} />
+        </ul>
+      </div>
+      <div className={`${css.pricePackage} ${css.container}`}>
+        <h2 className={css.pricePackageHeader}>Пакети послуг</h2>
+        <ul className={css.pricePackageList}>
+          <PricePackageListItem content={pricePackageContent} />
+        </ul>
+      </div>
+      <div className={`${css.possibilities} ${css.container}`}>
+        <h2 className={css.possibilitiesTitle}>Можливості</h2>
+        <ul className={css.possibilitiesList}>
+          <PossibilitiesListItem content={possibilitiesContent} />
+        </ul>
       </div>
       <ContactForm />
     </div>
