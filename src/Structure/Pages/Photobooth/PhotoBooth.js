@@ -15,6 +15,10 @@ import brandingImg3 from '../../../Assets/img/photoBoothBranding3.png';
 import PhotoBoothBrandingListItem from './PhotoBoothBrandingListItem';
 import PricePackageListItem from './pricePackageListItem';
 import PossibilitiesListItem from './PossibilitiesListItem';
+import number1 from '../../../Assets/img/number1.png';
+import number2 from '../../../Assets/img/number2.png';
+import number3 from '../../../Assets/img/number3.png';
+import number4 from '../../../Assets/img/number4.png';
 export default function PhotoBooth() {
   useScrollToPages('photobooth');
   const heroDescContent = [
@@ -72,7 +76,28 @@ export default function PhotoBooth() {
       price: '14000 грн',
     },
   ];
-  const possibilitiesContent = [{ desc: '11111' }];
+  const possibilitiesContent = [
+    {
+      bulletPoint: number1,
+      tittle: 'Надсилайте',
+      desc: 'Миттєво відправляйте фото в соціальні мережі, на пошту або SMS з посиланням на фото, використовуючи Sharing Station.',
+    },
+    {
+      bulletPoint: number2,
+      tittle: 'Налаштовуйте',
+      desc: 'З великою кількістю налаштувань ви обов`язково знайдете те що треба. Розмістіть ваш бренд на фотобудку, знімок і фон.',
+    },
+    {
+      bulletPoint: number3,
+      tittle: 'Зберігайте',
+      desc: 'Забирайте з собою емоції та спогади. Наше обладнання дозволить',
+    },
+    {
+      bulletPoint: number4,
+      tittle: 'Реквізит',
+      desc: 'Наш реквезіт зацікавить і додасть атмосфери на фото. ',
+    },
+  ];
   const contactsHandlerClick = useClickHandler({ name: 'contacts' });
   return (
     <div id="photobooth" className={css.photobooth}>
