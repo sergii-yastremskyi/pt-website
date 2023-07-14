@@ -83,6 +83,28 @@ a,
   line-height: 3;
   border: none;
 }
+.errorMsg {
+  color: red;
+}
+.modal {
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  max-height: 400px;
+  max-width: 400px;
+  z-index: 2;
+
+  background-color: rgb(19, 71, 56);
+  opacity: 0.8;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: rgb(255, 255, 255);
+  font-size: 30px;
+}
 @media screen and (min-width: 700px) {
   .contactsWrapper {
     display: flex;
@@ -97,6 +119,9 @@ a,
   }
   .contactInfoList {
     align-items: flex-start;
+  }
+  .modal {
+    /* width: 33%; */
   }
 }
 @media screen and (min-width: 1200px) {
