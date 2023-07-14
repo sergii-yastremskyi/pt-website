@@ -19,7 +19,9 @@ import number1 from '../../../Assets/img/number1.png';
 import number2 from '../../../Assets/img/number2.png';
 import number3 from '../../../Assets/img/number3.png';
 import number4 from '../../../Assets/img/number4.png';
+import useIsDesktop from '../../../hooks/useIsDesktop';
 export default function PhotoBooth() {
+  const desktop = useIsDesktop();
   useScrollToPages('photobooth');
   const heroDescContent = [
     'Гарантія відмінного настрою',
@@ -100,28 +102,44 @@ export default function PhotoBooth() {
   ];
   const contactsHandlerClick = useClickHandler({ name: 'contacts' });
   return (
-    <div id="photobooth" className={css.photobooth}>
+    <div id="photobooth" className={`${css.photobooth} ${css.itemContainer}`}>
       <div className={css.productHero}>
-        <div className={css.productImage}>
-          <img
-            className={css.photoBoothHeroImg}
-            alt="Photobooth"
-            src={photoBoothHeroImg}
-          />
+        <div className={css.heroWrapper}>
+          <div className={css.productImage}>
+            <img
+              className={css.photoBoothHeroImg}
+              alt="Photobooth"
+              src={photoBoothHeroImg}
+            />
+          </div>
+          <div className={css.productiNfo}>
+            <h2>Фотобудка від Party Tools це:</h2>
+            <ul className={css.heroDescList}>
+              <PhotoBoothDescList content={heroDescContent} />
+            </ul>
+          </div>
+          {!desktop && (
+            <OrangeButton
+              onPress={contactsHandlerClick}
+              label="Замовити послугу"
+            />
+          )}
         </div>
-        <div className={css.productiNfo}>
-          <h2>Фотобудка від Party Tools це:</h2>
-          <ul className={css.heroDescList}>
-            <PhotoBoothDescList content={heroDescContent} />
+        {desktop && (
+          <OrangeButton
+            onPress={contactsHandlerClick}
+            label="Замовити послугу"
+          />
+        )}
+      </div>
+
+      <div className={css.photoSection}>
+        <div className={css.photoSectionWrapper}>
+          <h2 className={css.photoSectionHeader}>Фото</h2>
+          <ul className={css.photoList}>
+            <PhotoListItem list={photoListContent} />
           </ul>
         </div>
-        <OrangeButton onPress={contactsHandlerClick} label="Замовити послугу" />
-      </div>
-      <div className={css.photoSection}>
-        <h2 className={css.photoSectionHeader}>Фото</h2>
-        <ul className={css.photoList}>
-          <PhotoListItem list={photoListContent} />
-        </ul>
         <img
           className={css.photoboothSampleImg}
           src={photoBoothSample}
@@ -131,8 +149,8 @@ export default function PhotoBooth() {
       <div className={`${css.branding} ${css.container}`}>
         <h2 className={css.brandingHeader}>Брендинг</h2>
         <p className={css.brandingDesc}>
-          Одна з додаткових опцій — брендування фотобудки. Це може бути логотип,
-          #хештег заходу, або цільове послання{' '}
+          Одна з додаткових опцій — брендування фотобудки. <br />
+          Це може бути логотип, #хештег заходу, або цільове послання{' '}
         </p>
         <ul className={css.brandingList}>
           <PhotoBoothBrandingListItem content={brandingContent} />
