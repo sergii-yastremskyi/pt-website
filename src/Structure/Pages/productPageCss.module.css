@@ -160,6 +160,7 @@ h3 {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  text-align: center;
 }
 .pricePackageCard:not(:last-child) {
   margin-bottom: 30px;
@@ -264,13 +265,14 @@ h3 {
     flex-direction: row;
   }
   .pricePackageCard {
-    width: 25%;
+    width: 35%;
+    padding: 15px;
   }
   .pricePackageCard:not(:last-child) {
-    margin-right: 25px;
+    margin-right: 15px;
   }
   .possibilitiesList {
-    padding: 0 200px;
+    padding: 0 50px;
   }
   .possibilitiesImg {
     width: 55px;
@@ -283,5 +285,14 @@ h3 {
 @media screen and (min-width: 1200px) {
   .itemContainer {
     max-width: 1200px;
+  }
+  .possibilitiesList {
+    padding: 0 200px;
+  }
+  .pricePackageCard {
+    width: 30%;
+  }
+  .pricePackageCard:not(:last-child) {
+    margin-right: 25px;
   }
 }
