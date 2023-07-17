@@ -9,6 +9,7 @@ import { useNavigate } from 'react-router-dom';
 import useClickHandler from '../../hooks/useClickHandler';
 export default function Header() {
   const desktop = useIsDesktop();
+  const navigate = useNavigate();
   // console.log('desktop', desktop);
   let [animate, setAnimate] = useState(false);
   const dropMenuAnimator = () => {
@@ -55,7 +56,10 @@ export default function Header() {
         ${animate && css.dropAnimation} ${desktop && css.menuIsOpen}`}
         >
           <div className={css.menuMobileContainer}>
-            <div className={(css.logoConteiner, css.item)}>
+            <div
+              onClick={() => navigate('/')}
+              className={(css.logoConteiner, css.item)}
+            >
               <img className={css.logo} alt="logo" src={logo}></img>
             </div>
 
@@ -89,7 +93,10 @@ export default function Header() {
           className={`${css.dropMenu} ${sharedCss.container}
         ${animate && css.dropAnimation} ${desktop && css.menuIsOpen}`}
         >
-          <div className={`${css.logoConteiner} ${css.item}`}>
+          <div
+            onClick={() => navigate('/')}
+            className={`${css.logoConteiner} ${css.item}`}
+          >
             <img className={css.logo} alt="logo" src={logo}></img>
           </div>
           <div className={css.leftWrapper}>

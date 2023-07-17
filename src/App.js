@@ -11,6 +11,7 @@ import WifiPrint from './Structure/Pages/WifiPrint';
 import GifBooth from './Structure/Pages/GifBooth';
 import InstantPrint from './Structure/Pages/InstantPrint';
 import HighSelfie from './Structure/Pages/HighSelfie';
+import Development from './Structure/Pages/Development';
 function App() {
   return (
     <div className={css.app}>
@@ -20,13 +21,14 @@ function App() {
 
       <Routes>
         <Route path="/" element={<Home />} />
+        <Route path="*" element={<Development />} />
         <Route path="/photo-booth" element={<PhotoBooth />} />
-        <Route path="/chromakey" element={<Chromakey />} />
-        <Route path="/selfie-mirror" element={<SelfieMirror />} />
-        <Route path="/wifi-print" element={<WifiPrint />} />
-        <Route path="/gif-booth" element={<GifBooth />} />
-        <Route path="/instant-print" element={<InstantPrint />} />
-        <Route path="/high-selfie" element={<HighSelfie />} />
+        <Route path="/chromakey" element={<Development />} />
+        <Route path="/selfie-mirror" element={<Development />} />
+        <Route path="/wifi-print" element={<Development />} />
+        <Route path="/gif-booth" element={<Development />} />
+        <Route path="/instant-print" element={<Development />} />
+        <Route path="/high-selfie" element={<Development />} />
       </Routes>
       {/*FOOOOOOTEEEEEEEEER  */}
       <div className={css.footer}>
