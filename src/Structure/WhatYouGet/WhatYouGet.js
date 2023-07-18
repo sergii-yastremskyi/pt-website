@@ -7,9 +7,11 @@ import number4 from '../../Assets/img/number4.png';
 import number5 from '../../Assets/img/number5.png';
 import number6 from '../../Assets/img/number6.png';
 import WhatYouGetListItem from './WhatYouGetListItem';
+import { useScrollTo } from '../../hooks/useScrollTo';
 
 const elemId = 'about';
 export default function WhatYouGet() {
+  useScrollTo(elemId);
   const whatYouGetContent = [
     {
       img: number1,
@@ -42,6 +44,7 @@ export default function WhatYouGet() {
       text: 'Працюємо з готівковим і безготівковим розрахунком',
     },
   ];
+
   return (
     <>
       {' '}

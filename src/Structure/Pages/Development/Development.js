@@ -1,8 +1,10 @@
 import React from 'react';
 import css from './development.module.css';
+import useScrollToPages from '../../../hooks/useScrollToPages';
 export default function Development() {
+  useScrollToPages('development');
   return (
-    <div className={css.container}>
+    <div className={css.container} id="development">
       <p className={css.message}>
         Вибачте, ця сторінка на разі в розробці. <br /> Звернітся до наших
         менеджерів.

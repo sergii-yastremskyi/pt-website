@@ -9,8 +9,10 @@ import img6 from '../../Assets/img/SmallImg6.jpg';
 import img7 from '../../Assets/img/SmallImg7.jpg';
 import img8 from '../../Assets/img/SmallImg8.jpg';
 import SmallImgsListItem from './SmallImgsListItem/SmallImgsListItem';
+import { useScrollTo } from '../../hooks/useScrollTo';
 export default function SmallImg() {
   const elemId = 'gallery';
+  useScrollTo(elemId);
   const imgs = [
     { img: img1 },
     { img: img2 },
