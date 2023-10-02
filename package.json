@@ -1,7 +1,7 @@
 {
-  "name": "my-app",
+  "name": "Party Tools",
   "version": "0.1.0",
-  "homepage": "https://sergii-yastremskyi.github.io/pt-website",
+  "homepage": "http://partytools.com.ua",
   "private": true,
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.5",
