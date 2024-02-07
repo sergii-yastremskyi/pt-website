@@ -69,9 +69,9 @@ export default function ContactForm() {
           <SoicialIcons />
         </div>
         <div className={css.contactForm}>
-          {modal && <div className={css.modal}>Ваше заявка прийнята!</div>}
+          {modal && <div className={css.modal}>Ваша заявка прийнята!</div>}
           <p className={css.contactFormText}>
-            Зв'яжіться з нами або залиште заявку на зворотний дзвінок і наш
+            Зв'яжіться з нами або залиште заявку на зворотній дзвінок і наш
             менеджер зв'яжеться з вами!
           </p>
           <form
