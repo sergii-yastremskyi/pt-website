@@ -33,9 +33,8 @@ function App() {
         <Route path="/instant-print" element={<Development />} />
         <Route path="/high-selfie" element={<Development />} />
       </Routes>
-     
+    
       <Footer/>
-      
     </div>
   );
 }

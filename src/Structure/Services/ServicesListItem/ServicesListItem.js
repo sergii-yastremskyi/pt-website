@@ -4,9 +4,6 @@ import css from '../../Services/services.module.css';
 import { useNavigate } from 'react-router-dom';
 export default function ServicesListItem({ services }) {
   const navigate = useNavigate();
-  const click = () => {
-    console.log('click');
-  };
   return (
     <>
       {services.map(item => (

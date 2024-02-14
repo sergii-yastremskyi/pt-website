@@ -14,7 +14,6 @@ export default function ServicesLitsItems({ listItems }) {
           >
             {item.text}
           </button>
-          {/* <Link to={item.link}>{item.text}</Link> */}
         </li>
       ))}
     </>

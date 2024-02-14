@@ -1,54 +1,77 @@
 import React from 'react'
 import css from "./footer.module.css"
 import logoWhite from '../../Assets/img/party_tools_logo_white.png';
+import useClickHandler from '../../hooks/useClickHandler';
+import FooterMenuListItems from './FooterMenuListItems';
+import FooterServicesListItems from './FooterServicesListItems';
 export default function Footer() {
+const logoClickHandler = useClickHandler({name: 'Header'})  
+
+const servicesHandlerClick = useClickHandler({ name: 'services' });
+const aboutHandlerClick = useClickHandler({ name: 'about' });
+const galleryHandlerClick = useClickHandler({ name: 'gallery' });
+
+const FooterServiceMenu = [
+  { text: 'ПОСЛУГИ', link: '', clickHandler: servicesHandlerClick },
+  { text: 'ПРО НАС', link: '', clickHandler: aboutHandlerClick },
+  { text: 'ГАЛЕРЕЯ', link: '', clickHandler: galleryHandlerClick },
+];
+const serivcesObj = [
+  {
+    name: 'Photobooth',
+    link: '/photo-booth',
+  },
+  {
+    name: 'Photobooth with Chromakey',
+    link: '/chromakey'
+  },
+  {
+    name: 'Selfie Mirror',
+    link: '/selfie-mirror',
+  },
+  {
+    name: 'Wi-Fi Print',
+    link: '/wifi-print',
+  },
+  {
+    name: 'Gif Booth',
+    link: '/gif-booth',
+  },
+  {
+    name: 'Instant Print',
+    link: '/instant-print',
+  },
+  {
+    name: 'High Selfie',
+    link: '/high-selfie',
+  },
+  {
+    name: 'Sharing Station',
+    link: ''
+  },
+];
+
+
+
+
   return (
-    <div className={css.footer}>
-        <img className={css.logoWhite} alt="logo" src={logoWhite}></img>
+      <div className={css.footerContainer}>
+       <div className={css.footer}>
+     
+        <img className={css.logoWhite}
+        alt="logo" src={logoWhite}
+         onClick={logoClickHandler}></img>
         <div className={css.footerMenu}>
           
           <p className={css.footerMenuHeader}>МЕНЮ</p>
           <ul className={css.footerMenuList}>
-            <li className={css.footerMenuListItem}>
-              <p className={css.footerMenuItem}>Послуги</p>
-            </li>
-            <li className={css.footerMenuListItem}>
-              <p className={css.footerMenuItem}>Про нас</p>
-            </li>
-
-            <li className={css.footerMenuListItem}>
-              <p className={css.footerMenuItem}>Контакти</p>
-            </li>
+           <FooterMenuListItems listItems={FooterServiceMenu}/>
           </ul>
         </div>
         <div className={css.footerServices}>
           <p className={css.footerServicesHeader}>ПОСЛУГИ</p>
           <ul className={css.footerServicesList}>
-            <li className={css.footerServicesListItem}>
-              <p className={css.footerServicesItem}>Photobooth</p>
-            </li>
-            <li className={css.footerServicesListItem}>
-              <p className={css.footerServicesItem}>Photobooth with Chomakey</p>
-            </li>
-
-            <li className={css.footerServicesListItem}>
-              <p className={css.footerServicesItem}>Selfie Mirror</p>
-            </li>
-            <li className={css.footerServicesListItem}>
-              <p className={css.footerServicesItem}>Wi-Fi Print</p>
-            </li>
-            <li className={css.footerServicesListItem}>
-              <p className={css.footerServicesItem}>GIF Booth</p>
-            </li>
-            <li className={css.footerServicesListItem}>
-              <p className={css.footerServicesItem}>Instant Print</p>
-            </li>
-            <li className={css.footerServicesListItem}>
-              <p className={css.footerServicesItem}>High Selfie</p>
-            </li>
-            <li className={css.footerServicesListItem}>
-              <p className={css.footerServicesItem}>Sharig Station</p>
-            </li>
+            <FooterServicesListItems services={serivcesObj} />
           </ul>
         </div>
         <div className={css.footerContacts}>
@@ -58,6 +81,8 @@ export default function Footer() {
           </a>
           <a href='mailto:info@partytools.com.ua'className={css.footerContactsItem}> info@partytools.com.ua</a>
         </div>
-      </div>
+        </div>
+        </div>
+      
   )
 }

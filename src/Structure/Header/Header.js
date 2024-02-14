@@ -38,7 +38,7 @@ export default function Header() {
   ];
 
   return (
-    <header className={css.header}>
+    <header id='Header' className={css.header}>
       {!desktop && (
         <div className={css.burgerBar}>
           <div
