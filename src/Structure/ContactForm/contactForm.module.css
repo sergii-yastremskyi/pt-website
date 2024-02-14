@@ -82,6 +82,7 @@ a,
   border-radius: 5px;
   line-height: 3;
   border: none;
+  cursor: pointer;
 }
 .errorMsg {
   color: red;
