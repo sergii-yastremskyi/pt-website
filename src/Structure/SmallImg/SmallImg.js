@@ -50,36 +50,11 @@ export default function SmallImg() {
   };
   return (
     <div id={elemId} className={css.smallImg}>
-      <div className="gallery">
+      <div className={css.gallery}>
         {imgs1.map((item, i) => {
           return (
-            <div
-              className="gallery-item"
-              style={{
-                width: 'calc(20% - 10px)',
-                overflow: 'hidden',
-                paddingBottom: 'calc(20% - 10px)',
-                height: '0',
-                position: 'relative',
-                display: 'flex',
-                justifyContent: 'center',
-                alignItems: 'center',
-                margin: '0 5px',
-                cursor: 'pointer',
-              }}
-              onClick={() => handleClick(i)}
-            >
-              <img
-                alt="photobooth"
-                src={item.src}
-                style={{
-                  width: '100%',
-                  height: '100%',
-                  objectFit: 'cover',
-                  position: 'absolute',
-                  top: '0',
-                }}
-              />
+            <div className={css.galleryItem} onClick={() => handleClick(i)}>
+              <img className={css.galleryImg} alt="photobooth" src={item.src} />
             </div>
           );
         })}
