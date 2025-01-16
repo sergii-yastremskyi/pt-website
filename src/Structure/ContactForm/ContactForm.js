@@ -21,28 +21,29 @@ export default function ContactForm() {
     formState: { errors },
   } = useForm();
 
+
+  
   const [contactNumber, setContactNumber] = useState('000000');
   const generateContactNumber = () => {
     const numStr = '000000' + ((Math.random() * 1000000) | 0);
     setContactNumber(numStr.substring(numStr.length - 6));
   };
+
+  
   const onSubmit = data => {
-    generateContactNumber();
 
-    setModal(true);
-    console.log(modal);
-    setTimeout(() => setModal(false), 3000);
-    console.log(modal);
-
-    reset();
-    sendForm('service_5h0tosq', 'template_ze0t61w', '#contact-form').then(
+    console.log(data);
+    
+     setModal(true);
+     setTimeout(() => setModal(false), 3000);
+     sendForm('service_5h0tosq', 'template_ze0t61w', '#contact-form').then(
       function (response) {
-        // console.log('SUCCESS!', response.status, response.text);
+         console.log('SUCCESS!', response.status, response.text);
       },
       function (error) {
-        // console.log('FAILED...', error);
+        console.log('FAILED...', error);
       }
-    );
+    ).finally(reset);
   };
   return (
     <div className={css.contacts} id={elemId}>
