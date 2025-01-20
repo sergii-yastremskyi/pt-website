@@ -49,7 +49,7 @@ export default function PhotoBooth() {
         'Брендинг фото',
         'Робота персоналу',
       ],
-      price: '9000 грн',
+      price: '12000 грн',
     },
     {
       title: 'Оптимальний',
@@ -61,7 +61,7 @@ export default function PhotoBooth() {
         'Брендинг фото',
         'Робота персоналу',
       ],
-      price: '11000 грн',
+      price: '16000 грн',
     },
     {
       title: 'Преміум',
@@ -75,7 +75,7 @@ export default function PhotoBooth() {
         'Хостес',
         'Шерінг станція',
       ],
-      price: '14000 грн',
+      price: '18000 грн',
     },
   ];
   const possibilitiesContent = [
