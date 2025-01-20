@@ -13,6 +13,7 @@ import SmallImgsListItem from './SmallImgsListItem/SmallImgsListItem';
 import { useScrollTo } from '../../hooks/useScrollTo';
 import { Gallery } from 'react-grid-gallery';
 import 'yet-another-react-lightbox/styles.css';
+import { nanoid } from 'nanoid';
 
 export default function SmallImg() {
   const elemId = 'gallery';
@@ -44,7 +45,7 @@ export default function SmallImg() {
     width,
     height,
   }));
-  console.log(slides);
+ 
   const handleClick = index => {
     setIndex(index);
   };
@@ -53,7 +54,7 @@ export default function SmallImg() {
       <div className={css.gallery}>
         {imgs1.map((item, i) => {
           return (
-            <div className={css.galleryItem} onClick={() => handleClick(i)}>
+            <div  key={nanoid()} className={css.galleryItem} onClick={() => handleClick(i)}>
               <img className={css.galleryImg} alt="photobooth" src={item.src} />
             </div>
           );
@@ -65,7 +66,7 @@ export default function SmallImg() {
         index={index}
         close={() => setIndex(-1)}
       />
-      {console.log(index, 'in render')}
+      {/* {console.log(index, 'in render')} */}
 
       {/* <ul className={css.smallImgList}>
         <SmallImgsListItem content={imgs} />

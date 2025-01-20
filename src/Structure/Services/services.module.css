@@ -22,11 +22,12 @@
     align-items: flex-start;
     justify-content: flex-start;
     overflow-x: scroll;
+   
     -webkit-overflow-scrolling:touch;
     
   }
   .servicesListItem {
-   
+    cursor: pointer;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;

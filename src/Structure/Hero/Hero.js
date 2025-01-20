@@ -5,7 +5,7 @@ import useClickHandler from '../../hooks/useClickHandler';
 export default function Hero() {
   const servicesClickHandler = useClickHandler({ name: 'services' });
   const btnTest = () => {
-    console.log('tesssttttt');
+    // console.log('tesssttttt');
   };
 
   return (
